@@ -1,4 +1,4 @@
-# 2019-01-02 uPortal Steering Committee Meeting Minutes
+# 2019-01-02 uPortal Steering Committee Meeting Summary
 
 ## Attendees
 Jim Helwig, Christian Murphy, Christian Cousquer, Drew Wills, Laura McCord

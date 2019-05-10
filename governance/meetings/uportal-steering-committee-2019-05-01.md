@@ -1,7 +1,7 @@
 # 2019-05-01 uPortal Steering Committee Meeting Summary
 
 ## Attendees
-im Helwig, Cheryl Palafox-Stewart,  Lauren Anderson, Laura McCord
+Jim Helwig, Cheryl Palafox-Stewart,  Lauren Anderson, Laura McCord
 
 ## Updates
 * An apereo.org website revamping may be approved in the near future. The uPortal (and other projects) presence on the new site will generally be a single landing page. We will be looking for volunteers to help migrate content to a new Github-based project site.

@@ -1,4 +1,4 @@
-# uPortal Supporting Subscription Model
+# uPortal Supporting Subscription Program
 
 The new Apereo membership model consists of two elements. The first is a Core Foundation Subscription, paid by all members. This covers key services Apereo provides for all its software communities – technical infrastructure, legal and licensing support, community coordination, events, and outreach. The second is a Supporting Subscription for specific Apereo Projects. This is an important way that organizations can substantively and collectively support projects they use and depend on. External to Apereo, organizations may also subscribe to commercial support offerings which address local support and targeted development. All three of these mechanisms address different but important needs.
 

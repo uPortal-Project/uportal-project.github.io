@@ -17,25 +17,17 @@ There are 3 prerequisites to cutting maven releases:
 
 Export your secret keyring via `gpg2 --keyring secring.gpg --export-secret-keys > ~/.gnupg/secring.gpg`
 
-In `$HOME/.m2/settings.xml`, configure Maven with your Sonatype credentials:
+Create a Sonatype user token via https://oss.sonatype.org > Profile > User Tokens
+
+In `$HOME/.m2/settings.xml`, configure Maven with your Sonatype user token:
 
 ```xml
 <settings>
     <servers>
         <server>
-            <id>releases</id>
-            <username>your_username</username>
-            <password>xxx</password>
-        </server>
-        <server>
-            <id>snapshots</id>
-            <username>your_username</username>
-            <password>xxx</password>
-        </server>
-        <server>
-            <id>thirdparty</id>
-            <username>your_username</username>
-            <password>xxx</password>
+            <id>sonatype-nexus-staging</id>
+            <username>user_token_name</username>
+            <password>user_token_pw</password>
         </server>
     </servers>
 </settings>
@@ -59,7 +51,7 @@ Check the styling:
 ```sh
 $ mvn notice:check notice:generate
 $ mvn license:check license:format
-$ mvn javadoc:javadoc javadoc:fix (?)
+$ mvn javadoc:javadoc javadoc:fix
 
 ```
 
@@ -92,13 +84,15 @@ $ ./gradlew clean portalInit
 
 ## Cut Release
 
-Run the following command in the directory of the component's clone:
+If you had to commit changes for the styling, push them to the repo.
+
+Run the following command in the directory of the component's clone.  If this is your first time, run each `release:` command separately so if there's a failure in the process, it'll be easier to diagnose and restart.
 
 ```sh
-$ mvn release:clean :prepare :perform
+$ mvn release:clean release:prepare release:perform
 ```
 
-:Note: During the `release` task, you will be prompted for a release version (e.g. `3.5.1`).  Press `Enter` for the default.  The release process will then create two commits - a commit to set the new version (`3.5.1`), and a commit to set the version to the new snapshot (`3.5.2-SNAPSHOT`)
+:Note: During the `release` tasks, you will be prompted for a release version (e.g. `3.5.1`), release tag, and new development version.  Press `Enter` for the defaults.  The release process will then create two commits - a commit to set the new version (`3.5.1`), and a commit to set the version to the new snapshot (`3.5.2-SNAPSHOT`)
 
 ## Close and Release from Nexus Staging Repository
 
@@ -121,7 +115,14 @@ Close the release in Sonatype to ensure the pushed Maven artifacts pass checks:
 
 ## Update uPortal-start
 
-Open a Pull Request on `uPortal-start` to update `uPortalVersion` to the new release.
+
+Open a Pull Request on `uPortal-start` to update the version of the newly released component.  Do a quick smoke test to ensure it built:
+
+```sh
+.../uPortal-start$ ./gradlew tomcatStop
+.../uPortal-start$ ./gradlew clean tomcatDeploy
+.../uPortal-start$ ./gradlew tomcatStart
+```
 
 ## Publish new docker demo of Quickstart
 

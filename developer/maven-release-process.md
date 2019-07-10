@@ -55,14 +55,16 @@ $ mvn javadoc:javadoc javadoc:fix
 
 ```
 
-Ideally, committers will be running those before they commit changes to the repo.  If there are changes needed, review the differences, and then commit to `master`:
-```sh
-$ git commit -am "chore: pre-release prep"
-```
+If you run into issues with the Maven task not finding licenses for dependencies, Maven will create a dependency mapping file that you should fold into the primary `license-mapping.xml` file located at https://github.com/Jasig/apereo-parent/blob/master/licenses/license-mappings.xml .
 
 Install the build locally:
 ```sh
 $ mvn clean install
+```
+
+Ideally, committers will be running the `mvn` `notice`, `license`, and `javadoc` before they commit changes to the repo.  If there are changes needed, review the differences, and then commit to `master`:
+```sh
+$ git commit -am "chore: pre-release prep"
 ```
 
 Point your uPortal-start to the local component build:
@@ -104,6 +106,7 @@ Close the release in Sonatype to ensure the pushed Maven artifacts pass checks:
   - The lifecycle is `Open --> Closed --> Released`
 5. Wait a few minutes for the component's artifact to close
 6. Release the artifact, and put the tag name in the description
+  - Leave 'Automatically Drop' checked.
 
 ## Create Release Notes
 
@@ -141,7 +144,7 @@ $ docker push apereo/uportal-demo:latest
 ```
 
 ## Update Community
-For any non-snapshot release, email an announcement to `uportal-dev`, `uportal-user`, and `jasig-announce`.
+For any non-snapshot release, email an announcement to `uportal-dev` and `uportal-user`.
   - Be sure to acknowledge those who contributed to the release.
   - Be sure to put the release into context for existing adopters to understand.
 

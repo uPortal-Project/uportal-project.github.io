@@ -5,7 +5,7 @@
 There are 3 prerequisites to cutting maven releases:
 
 1. [JIRA Account at Sonatype](https://issues.sonatype.org/secure/Signup!default.jspa)
-2. Permissions to release projects
+2. Permissions at Sonatype to release projects
     - This is granted via a Jira ticket from a uPortal committer
 3. [Set up public PGP key on a server](https://central.sonatype.org/pages/working-with-pgp-signatures.html)
     - Generate a key pair `gpg2 --gen-key`
@@ -49,11 +49,12 @@ Build a clean version of `uPortal-start` with the quickstart data set and perfor
 
 Check the styling:
 ```sh
-$ mvn notice:check notice:generate
-$ mvn license:check license:format
-$ mvn javadoc:javadoc javadoc:fix
-
+$ mvn notice:generate
+$ mvn license:format
+$ mvn javadoc:fix
 ```
+
+Review any changes from the styling tasks and commit them.
 
 If you run into issues with the Maven task not finding licenses for dependencies, Maven will create a dependency mapping file that you should fold into the primary `license-mapping.xml` file located at <https://github.com/Jasig/apereo-parent/blob/master/licenses/license-mappings.xml>.
 

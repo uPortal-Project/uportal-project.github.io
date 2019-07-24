@@ -17,7 +17,7 @@ There are 3 prerequisites to cutting maven releases:
 
 Export your secret keyring via `gpg2 --keyring secring.gpg --export-secret-keys > ~/.gnupg/secring.gpg`
 
-Create a Sonatype user token via https://oss.sonatype.org > Profile > User Tokens
+Create a Sonatype user token via <https://oss.sonatype.org> > Profile > User Tokens
 
 In `$HOME/.m2/settings.xml`, configure Maven with your Sonatype user token:
 
@@ -39,7 +39,7 @@ Setup is only required to be done once.
 
 We encourage performing releases directly from a clone of the official repository rather than a fork to avoid extra steps.
 
-This means when testing on `uPortal-start` for the release, you should use the `apereo` repository but configure the version of the component (eg the Bookmarks or Announcements portlet) to be the SNAPSHOT version that you'll build in the following steps.
+This means when testing on `uPortal-start` for the release, you should use the `apereo` repository but configure the version of the component (eg the Bookmarks or Announcements portlet) to be the `SNAPSHOT` version that you'll build in the following steps.
 
 ## Testing
 
@@ -55,7 +55,7 @@ $ mvn javadoc:javadoc javadoc:fix
 
 ```
 
-If you run into issues with the Maven task not finding licenses for dependencies, Maven will create a dependency mapping file that you should fold into the primary `license-mapping.xml` file located at https://github.com/Jasig/apereo-parent/blob/master/licenses/license-mappings.xml .
+If you run into issues with the Maven task not finding licenses for dependencies, Maven will create a dependency mapping file that you should fold into the primary `license-mapping.xml` file located at <https://github.com/Jasig/apereo-parent/blob/master/licenses/license-mappings.xml>.
 
 Install the build locally:
 ```sh
@@ -99,7 +99,7 @@ $ mvn release:clean release:prepare release:perform
 ## Close and Release from Nexus Staging Repository
 
 Close the release in Sonatype to ensure the pushed Maven artifacts pass checks:
-1. Log into https://oss.sonatype.org 
+1. Log into <https://oss.sonatype.org>
 2. Search among `Build Promotion` > `Staging Repositories` for your username
 3. Review the release for the expected artifacts
 4. Select the uPortal artifact you staged and hit "Close"
@@ -110,7 +110,7 @@ Close the release in Sonatype to ensure the pushed Maven artifacts pass checks:
 
 ## Create Release Notes
 
-1. Use Git to inspect the incremental commits since the last release (e.g. $ git log v3.5.0..3.5.1 --no-merges)
+1. Use Git to inspect the incremental commits since the last release (e.g. `$ git log v3.5.0..3.5.1 --no-merges`)
 2. Review the issue tracker and confirm that the referenced issues have been Resolved
 3. Enter the release notes on the GitHub releases page in the component's repo
   - It's helpful to use the previous release notes as a guide
@@ -122,7 +122,8 @@ Close the release in Sonatype to ensure the pushed Maven artifacts pass checks:
 Open a Pull Request on `uPortal-start` to update the version of the newly released component.  Do a quick smoke test to ensure it built:
 
 ```sh
-.../uPortal-start$ ./gradlew tomcatStop
+$ cd {uPortal-start repo}
+$ ./gradlew tomcatStop
 .../uPortal-start$ ./gradlew clean tomcatDeploy
 .../uPortal-start$ ./gradlew tomcatStart
 ```
@@ -131,7 +132,7 @@ Open a Pull Request on `uPortal-start` to update the version of the newly releas
 
 Publish a new apereo/uPortal-demo Docker image and update the `:latest` tag.
 Prerequisites:
-  - Docker Cloud account (https://cloud.docker.com)
+  - Docker Cloud account (<https://cloud.docker.com>)
   - Access to post to the apereo Docker group
   - The uPortal version has been added to `uPortal-start`
 
@@ -144,15 +145,15 @@ $ docker push apereo/uportal-demo:latest
 ```
 
 ## Update Community
-For any non-snapshot release, email an announcement to `uportal-dev` and `uportal-user`.
+For any non-snapshot release, email an announcement to [`uportal-dev`](https://groups.google.com/a/apereo.org/forum/#!forum/uportal-dev) and [`uportal-user`](https://groups.google.com/a/apereo.org/forum/#!forum/uportal-user).
   - Be sure to acknowledge those who contributed to the release.
   - Be sure to put the release into context for existing adopters to understand.
 
-Have someone with access to the uPortal Twitter account announce the release.
+Have someone with access to the [uPortal Twitter account](https://twitter.com/uportal) announce the release.
 
 ## References
 
-(https://apereo.atlassian.net/wiki/spaces/UPC/pages/102336655/Cutting+a+uPortal+Release)
-(https://central.sonatype.org/pages/ossrh-guide.html)
-(https://docs.gradle.org/current/userguide/signing_plugin.html#sec:signatory_credentials)
+(<https://apereo.atlassian.net/wiki/spaces/UPC/pages/102336655/Cutting+a+uPortal+Release>)
+(<https://central.sonatype.org/pages/ossrh-guide.html>)
+(<https://docs.gradle.org/current/userguide/signing_plugin.html#sec:signatory_credentials>)
 

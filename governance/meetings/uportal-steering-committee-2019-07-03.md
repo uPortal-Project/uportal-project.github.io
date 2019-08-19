@@ -5,7 +5,7 @@ Jim Helwig, Laura McCord, Julien Gribonvald
 
 ## Esup Days : 18 Sept 2019
 * Julien will do a presentation on new features. Others may show what they have done and provide feedback.
-* There is exxpected to be interest in examples of implementations based on uP 5.x, clarity on the uPortal roadmap, and information on other apps in the uPortal ecosystem.
+* There is expected to be interest in examples of implementations based on uP 5.x, clarity on the uPortal roadmap, and information on other apps in the uPortal ecosystem.
 
 ## Open Apereo follow-up
 * There continues to be interest in a uPortal demo.

@@ -10,3 +10,7 @@ The steering committee discussed community meeting/workshops for Open Apereo 21.
 
 * Roadmap (meeting)
 * First contribution workshop
+
+## uPSC task tracking
+
+The steering committee discussed current efforts at using Github for prioritizing and tracking committee tasks.

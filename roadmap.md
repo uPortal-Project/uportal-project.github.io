@@ -40,9 +40,9 @@ A dropped feature / change may have merit, but the community may not want to pla
 
 ## uPortal 2021 Roadmap
 
-Category        | 2021 Q3 | 2021 Q4 | 2022 Q1 | 2022 Q4
+Category        | 2021 Q3 | 2021 Q4 | 2022 Q1 | 2022 Q2
 --------------- | ------- | ------- | ------- | -------
 Differentiating |  | Modernize QuickStart | | Convert Portlets to Web Components
 Integration     | Add Preferences API | | Add more APIs | 
-Parity          | Upgrade Java, Restructure docs | Upgrade Spring, Revamp website | Standardize JS Libraries | 
+Parity          | Upgrade Java, Restructure docs | Revamp website | Standardize JS Libraries | Upgrade Spring
 

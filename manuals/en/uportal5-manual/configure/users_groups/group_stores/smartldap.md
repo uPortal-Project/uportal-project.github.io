@@ -90,7 +90,7 @@ Example `attributesMapper` Bean:
         <property name="childGroupKeyRegex" value="cn=(.*),ou=Groups,dc=apereo,dc=org"/>
         <property name="childGroupKeyRegex" value="cn=(.*),ou=.*,dc=apereo,dc=org"/>
          +-->
-        <property name="childGroupKeyRegex" value="cn=(.*)),ou=Groups,dc=apereo,dc=org"/>
+        <property name="childGroupKeyRegex" value="cn=(.*),ou=Groups,dc=apereo,dc=org"/>
 
         <!--
          | This parameter is used to avoid performance problems with large people's members groups

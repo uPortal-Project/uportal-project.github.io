@@ -12,7 +12,7 @@ such as the update of a layout.
 
 ## Disabling JGroups (uPortal 5.11.1+)
 
-Some implementers have found they do not support for CAS cache
+Some implementers have found they do not need support for CAS cache
 replication, and have opted to forego JGroups. JGroups adds
 to start up time and network configuration/traffic.
 

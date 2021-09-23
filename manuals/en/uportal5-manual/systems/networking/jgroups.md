@@ -10,7 +10,7 @@ a server that the initiating user is NOT using.
 Sharing other caches is mostly focused on a consistent service,
 such as the update of a layout.
 
-## Disabling JGroups
+## Disabling JGroups (uPortal 5.11.1+)
 
 Some implementers have found they do not support for CAS cache
 replication, and have opted to forego JGroups. JGroups adds

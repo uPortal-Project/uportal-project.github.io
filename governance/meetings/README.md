@@ -2,6 +2,7 @@
 
 ## 2021
 
+* [2021-12-08](./uportal-steering-committee-2021-12-08.md)
 * [2021-11-10](./uportal-steering-committee-2021-11-10.md)
 * [2021-10-13](./uportal-steering-committee-2021-10-13.md)
 * [2021-08-11](./uportal-steering-committee-2021-08-11.md)

@@ -1,5 +1,9 @@
 # uPortal Steering Committee Meetings
 
+## 2022
+
+* [2022-01-12](uportal-steering-committee-2022-01-12.md)
+
 ## 2021
 
 * [2021-12-08](./uportal-steering-committee-2021-12-08.md)

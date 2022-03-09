@@ -14,7 +14,7 @@ Jim Helwig, Chris Beach, Jonathan Tran, Julien Gribonvald, Benito Gonzalez
 ### Open Apereo 2022
 
 Open Apereo 2022 is June 14 and 15. The uPSC discussed Open Apereo 2022 and the presentations members of the uPSC are considering submitting.
-See https://www.apereo.org/content/open-apereo-2022-value-open-source for more information regarding Open Apereo 2022
+See https://www.apereo.org/content/open-apereo-2022-value-open-source for more information regarding Open Apereo 2022.
 
 ### Editing rich content in uPortal
 

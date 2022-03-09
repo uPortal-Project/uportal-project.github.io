@@ -18,4 +18,4 @@ See https://www.apereo.org/content/open-apereo-2022-value-open-source for more i
 
 ### Editing rich content in uPortal
 
-The uPSC started the discussion regarding editing rich content in uPortal. There are many things to consider including: simple contnent, user interface components, and features/functionalitites of other content management systems.
+The uPSC started the discussion regarding editing rich content in uPortal. There are many things to consider including: simple content, user interface components, and features/functionalities of other content management systems.

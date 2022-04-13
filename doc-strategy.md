@@ -18,4 +18,4 @@ Besides the typical challenge of documenting an open source project, uPortal has
 Our uPortal 4 manual is in Confluence, and our uPortal 5 documentation has been captured
 in both the uPortal 5 repo and the uPortal-start repo.
 
-_We welcome any assistance in migrating documentation from those sources to this repo._
+___We welcome any assistance in migrating documentation from those sources to this repo.___

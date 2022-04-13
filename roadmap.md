@@ -40,9 +40,13 @@ A dropped feature / change may have merit, but the community may not want to pla
 
 ## uPortal 2021 Roadmap
 
-Category        | 2021 Q3 | 2021 Q4 | 2022 Q1 | 2022 Q2
---------------- | ------- | ------- | ------- | -------
-Differentiating |  | Modernize QuickStart | | Convert Portlets to Web Components
-Integration     | Add Preferences API | | Add more APIs | 
-Parity          | Upgrade Java, Restructure docs | Revamp website | Standardize JS Libraries | Upgrade Spring
+Category        | 2022 Q2                                 | 2022 Q3                       | 2022 Q4                      | 2023 Q1
+--------------- |-----------------------------------------|-------------------------------|------------------------------| -------
+Differentiating | Convert Portlets to Web Components      | Migrate WCs                   | Modernize QuickStart         | 
+Integration     | Preferences API                         |                               |                              | 
+Parity          | Security patches, Java 11, Migrate docs | Portlets upgraded to Spring 5 | uPortal upgraded to Spring 5 | Java 17
 
+## Future Tasks
+- add more APIs
+- Revamp marketing site
+- Standardize JS Libraries

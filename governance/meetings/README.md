@@ -2,6 +2,7 @@
 
 ## 2022
 
+* [2022-04-13](uportal-steering-committee-2022-04-13.md)
 * [2022-03-09](uportal-steering-committee-2022-03-09.md)
 * [2022-02-09](uportal-steering-committee-2022-02-09.md)
 * [2022-01-12](uportal-steering-committee-2022-01-12.md)

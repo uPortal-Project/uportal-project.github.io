@@ -1,6 +1,6 @@
 # uPortal 5 Manual
 
-See the [documentation strategy](../../doc-strategy.md) for our current approach to documentation.
+See the [documentation strategy](../../../doc-strategy.md) for our current approach to documentation.
 
 ___We welcome any assistance in migrating documentation from legacy/other sources to this repo.___
 

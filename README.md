@@ -1,7 +1,10 @@
 ## Welcome to the uPortal Project
 
-This is likely to become a more substantive site to find information about the uPortal Project. 
+This is likely to become a more substantive site to find information about the uPortal Project.
 
+* uPortal 5 Manual (work-in-progress)
+    * [English](./manuals/en/uportal5-manual/README.md)
+    * Français
 * [Reports](./reports)
 * [Roadmap](./roadmap.md)
 * [uPortal Steering Committee meetings](./governance/meetings)

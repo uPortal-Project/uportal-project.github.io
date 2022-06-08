@@ -12,7 +12,7 @@ The [roadmap](../../roadmap.md) was reviewed and will be updated for upcoming qu
 
 ### Open Apereo 2022
 
-The [Apereo Stack-Hack](https://eventyay.com/e/99f4099e/session/7752) will be on Wednesday 15 June, 2022, starting at 10:00 AM (EDT). Keep an eye out for more information regarding registration.
+The [Apereo Stack-Hack](https://eventyay.com/e/99f4099e/session/7752) will be on Wednesday the 15th of June, 2022, starting at 10:00 AM (EDT). Keep an eye out for more information regarding registration.
 
 ### uPortal Steering Committee Elections
 

@@ -10,6 +10,7 @@ ___We welcome any assistance in migrating documentation from legacy/other source
 
 ## Developer Documentation
 
+* [API Documentation](developer/api/README.md)
 * [Maven Release Process](developer/maven-release-process.md)
 
 ## Systems Administration

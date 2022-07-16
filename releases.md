@@ -4,7 +4,7 @@ Here we capture details about uPortal releases.
 
 ## Versioning
 
-We follow the Semantic Versioning as defined at [https://semver.org/]() for uPortal.
+We follow the Semantic Versioning as defined at <https://semver.org> for uPortal.
 
 ## Frequency
 

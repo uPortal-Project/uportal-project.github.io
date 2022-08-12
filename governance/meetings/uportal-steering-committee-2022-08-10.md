@@ -24,3 +24,7 @@ Some date (ranges) and some locations were proposed. Keep an eye out for an emai
 ### Web Presence
 
 The steering committee started discussion regarding building a new marketing website for uPortal.
+
+### Diversity and Inclusion Survey
+
+Not uPortal-specific, there will be a survey on diversity and inclusion to gain insight on how open source software communities engage with subscribers, members, and contributors. Keep an eye out for an email for the survey.

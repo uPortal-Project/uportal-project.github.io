@@ -38,7 +38,7 @@ This is the third category that captures changes that capture work that simply k
 Some suggestions may not align with our current strategy or may not be included for other reasons.
 A dropped feature / change may have merit, but the community may not want to plan to work on it in the next year.
 
-## uPortal 2021 Roadmap
+## uPortal 2022 Roadmap
 
 Category        | 2022 Q3                                 | 2022 Q4                       | 2023 Q1                      | 2023 Q2
 --------------- |-----------------------------------------|-------------------------------|------------------------------| -------

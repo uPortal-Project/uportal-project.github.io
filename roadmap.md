@@ -42,9 +42,13 @@ A dropped feature / change may have merit, but the community may not want to pla
 
 Category        | 2022 Q3                                 | 2022 Q4                       | 2023 Q1                      | 2023 Q2
 --------------- |-----------------------------------------|-------------------------------|------------------------------| -------
-Differentiating | Convert Portlets to Web Components      | Migrate WCs                   | Modernize QuickStart         | 
+Differentiating |                                         | Convert Portlets to Web Components | Migrate WCs to Lit      | Modernize QuickStart
 Integration     | Favorites API                           |                               |                              | 
-Parity          | Security patches, Java 11, Migrate docs | Portlets upgraded to Spring 5 | uPortal upgraded to Spring 5 | Java 17
+Parity          | Java 11                                 | Portlets upgraded to Spring 5 | uPortal upgraded to Spring 5 | Java 17
+
+## Ongoing Tasks
+- Security Patches
+- Migrate / Maintain Docs
 
 ## Future Tasks
 - add more APIs

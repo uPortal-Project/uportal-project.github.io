@@ -8,6 +8,7 @@ This is likely to become a more substantive site to find information about the u
 * [Reports](./reports)
 * [Roadmap](./roadmap.md)
 * [uPortal Steering Committee meetings](./governance/meetings)
+* [Web Components](./web-components.md)
 
 ### Connect
 

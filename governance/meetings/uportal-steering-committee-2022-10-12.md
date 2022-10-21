@@ -2,7 +2,7 @@
 
 ## Attendees
 
-Mary Elder, Chris Beach, Jonathan Tran, Benito Gonzalez, Julien Gribonvald,
+Mary Elder, Chris Beach, Jonathan Tran, Julien Gribonvald,
 Laura Moran, Benito Gonzalez
 
 ## Topics

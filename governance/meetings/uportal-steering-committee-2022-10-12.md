@@ -3,7 +3,7 @@
 ## Attendees
 
 Mary Elder, Chris Beach, Jonathan Tran, Julien Gribonvald,
-Laura Moran, Benito Gonzalez
+Laura Moran, Benito Gonzalez, Jim Helwig
 
 ## Topics
 
@@ -24,3 +24,7 @@ To see repositories under the uPortal ecosystem that have the hacktoberfest
 topic, see [https://github.com/search?q=org%3AuPortal-Project+topic%3Ahacktoberfest&type=Repositories&ref=advsearch&l=&l=](https://github.com/search?q=org%3AuPortal-Project+topic%3Ahacktoberfest&type=Repositories&ref=advsearch&l=&l=)
 
 We look forward to your contributions and thanks in advance :)
+
+### uPortal Website
+
+The committee discussed improving the project website and making it easier to update and maintain.

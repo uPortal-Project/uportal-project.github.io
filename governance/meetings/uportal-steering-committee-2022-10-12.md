@@ -18,9 +18,9 @@ Hacktoberfest 2022 is taking place now. Contribute to uPortal and elect to
 receive one of two prizes: a tree planted in their name, or the Hacktoberfest
 2022 t-shirt.
 
-Registration can be done at https://hacktoberfest.com
+Registration can be done at [https://hacktoberfest.com](https://hacktoberfest.com)
 
 To see repositories under the uPortal ecosystem that have the hacktoberfest
-topic, see https://github.com/search?q=org%3AuPortal-Project+topic%3Ahacktoberfest&type=Repositories&ref=advsearch&l=&l=
+topic, see [https://github.com/search?q=org%3AuPortal-Project+topic%3Ahacktoberfest&type=Repositories&ref=advsearch&l=&l=](https://github.com/search?q=org%3AuPortal-Project+topic%3Ahacktoberfest&type=Repositories&ref=advsearch&l=&l=)
 
 We look forward to your contributions and thanks in advance :)

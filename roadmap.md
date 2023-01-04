@@ -51,6 +51,8 @@ Parity          | Java 11                  | Portlets upgraded to Spring 5      
 - Migrate / Maintain Docs
 
 ## Future Tasks
-- add more APIs
+- Update Gradle to latest version
+- Remove JAXB
+- Add more APIs
 - Revamp marketing site
 - Standardize JS Libraries

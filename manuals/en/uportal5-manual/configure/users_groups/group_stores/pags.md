@@ -20,8 +20,8 @@ PAGS computes entity memberships by testing the value of selected `IPerson` attr
 
 Although PAGS groups cannot answer their entity members, they are aware of their member groups.  So they can also do:
 
-    - findMemberGroupKeys()
-    - findMemberGroups()
+- `findMemberGroupKeys()`
+- `findMemberGroups()`
 
 This will usually suffice for authorization, so the PAGS can be thought of as an authorization-oriented group store. Since PersonDirectory supplies information about IPersons and not about ChannelDefinitions or other portal entities, a further limitation is that the PAGS can only contain memberships associating IPerson group members with IPerson groups.
 

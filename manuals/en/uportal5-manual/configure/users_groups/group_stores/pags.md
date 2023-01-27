@@ -6,7 +6,7 @@ The PAGS defines group memberships by logical expressions on attributes retrieve
 
 ## Capabilities of PAGS
 
-PAGS computes entity memberships by testing the value of selected IPerson attributes. Like PersonDirectory, the PAGS retrieves information one user at a time. As a result, it can answer inquiries about what groups a particular IPerson or _group member_ belongs to, but it cannot answer inquiries about what entity members are contained by a given group.
+PAGS computes entity memberships by testing the value of selected `IPerson` attributes. Like PersonDirectory, the PAGS retrieves information one user at a time. As a result, it can answer inquiries about what groups a particular `IPerson` or _group member_ belongs to, but it cannot answer inquiries about what entity members are contained by a given group.
 
 ### Can do:
 

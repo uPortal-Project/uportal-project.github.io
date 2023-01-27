@@ -16,7 +16,7 @@ PAGS computes entity memberships by testing the value of selected IPerson attrib
 
 ### Can't do
 
-  - findEntitiesForGroup()
+- `findEntitiesForGroup()`
 
 Although PAGS groups cannot answer their entity members, they are aware of their member groups.  So they can also do:
 

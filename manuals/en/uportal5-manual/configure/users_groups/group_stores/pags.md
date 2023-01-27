@@ -48,7 +48,7 @@ The PAGS currently ships with 8 tester classes, and you can easily create your o
 
 ```
 
-The following tester classes (all in the package org.jasig.portal.groups.pags.testers) come with PAGS:
+The following tester classes (all in the package `org.jasig.portal.groups.pags.testers`) come with PAGS:
 
 | Tester | Use |
 | --- | ----------- |

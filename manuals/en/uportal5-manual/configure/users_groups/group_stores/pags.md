@@ -52,36 +52,36 @@ The following tester classes (all in the package org.jasig.portal.groups.pags.te
 
 | Tester | Use |
 | --- | ----------- |
-| AbstractIntegerTester | Abstract base class for testers that test the values of an IPerson Integer attribute. |
-| AbstractNotValuesTester | Base class for testers that determine membership based on the number of values a user has for an attribute. |
-| AbstractStringTester | Abstract class tests a possibly multi-valued attribute against a test value. |
-| AdhocGroupTester | Immutable PAGS Tester for inclusive/exclusive membership in sets of groups |
-| AlwaysTrueTester |  |
-| BaseAttributeTester | A tester for examining IPerson attributes. |
-| EagerRegexTester | A tester for matching multiple values of an attribute against a regular expression. |
-| GuestUserTester | Evaluates whether the user is a guest. |
-| InjectAttributeRegexTester | A tester for matching the possibly multiple values of an attribute against a regular expression, and in replacing a pattern by an other user attribute (optional use). |
-| IntegerEQTester | Converts attribute and test value to ints. Attribute must be EQ to the test value.  In the event of a NumberFormatException, the test fails (true for all Integer testers.) |
-| IntegerGETester | Attribute must be GE test value. |
-| IntegerGTTester | Attribute must be GT test value. |
-| IntegerLETester | Attribute must be LE test value. |
-| IntegerLTTester | Attribute must be LT test value. |
-| InvertedRegexTester | A tester for matching the possibly multiple values of an attribute against a regular expression and returning true for a FAILURE to match. |
-| LowercasedRegexTester | A tester for matching the possibly multiple values of an attribute (made lower case) against a regular expression. |
-| MissingAttributeTester | Testing a missing attribute on IPerson. |
-| NbValuesEQTester | A tester for examining if an IPerson attribute has exactly nth values. |
-| NbValuesGETester | A tester for examining if an <code>IPerson</code> attribute has more or exactly nth values. |
-| NbValuesGTTester | A tester for examining if an <code>IPerson</code> attribute has more than nth values. |
-| NbValuesLETester | A tester for examining if an <code>IPerson</code> attribute has less or exactly nth values. |
-| NbValuesLTTester | A tester for examining if an <code>IPerson</code> attribute has less than nth values. |
-| PropertyInvertedRegexTester | A tester for matching the possibly multiple values of an attribute against a regular expression obtained from a property value from portal.properties and returning true for a FAILURE to match. |
-| PropertyRegexTester | A tester for matching the possibly multiple values of an attribute against a regular expression obtained from a property value specified in portal.properties. |
-| RegexTester | Attribute must match a regular expression.  Do not include the delimiter. |
-| StringEqualsIgnoreCaseTester | String comparison ignoring case. |
-| StringEqualsTester | String comparison. |
-| ThemeNameEqualsIgnoreCaseTester | |
-| ValueExistsTester | True if the attribute has any non-blank value. |
-| ValueMissingTester | True if the attribute is null or none of its values equals the specified value. |
+| `AbstractIntegerTester` | Abstract base class for testers that test the values of an `IPerson` Integer attribute. |
+| `AbstractNotValuesTester` | Base class for testers that determine membership based on the number of values a user has for an attribute. |
+| `AbstractStringTester` | Abstract class tests a possibly multi-valued attribute against a test value. |
+| `AdhocGroupTester` | Immutable PAGS Tester for inclusive/exclusive membership in sets of groups |
+| `AlwaysTrueTester` |  |
+| `BaseAttributeTester` | A tester for examining `IPerson` attributes. |
+| `EagerRegexTester` | A tester for matching multiple values of an attribute against a regular expression. |
+| `GuestUserTester` | Evaluates whether the user is a guest. |
+| `InjectAttributeRegexTester` | A tester for matching the possibly multiple values of an attribute against a regular expression, and in replacing a pattern by an other user attribute (optional use). |
+| `IntegerEQTester` | Converts attribute and test value to ints. Attribute must be EQ to the test value.  In the event of a `NumberFormatException`, the test fails (true for all Integer testers.) |
+| `IntegerGETester` | Attribute must be GE test value. |
+| `IntegerGTTester` | Attribute must be GT test value. |
+| `IntegerLETester` | Attribute must be LE test value. |
+| `IntegerLTTester` | Attribute must be LT test value. |
+| `InvertedRegexTester` | A tester for matching the possibly multiple values of an attribute against a regular expression and returning true for a FAILURE to match. |
+| `LowercasedRegexTester` | A tester for matching the possibly multiple values of an attribute (made lower case) against a regular expression. |
+| `MissingAttributeTester` | Testing a missing attribute on `IPerson`. |
+| `NbValuesEQTester` | A tester for examining if an `IPerson` attribute has exactly nth values. |
+| `NbValuesGETester` | A tester for examining if an `IPerson` attribute has more or exactly nth values. |
+| `NbValuesGTTester` | A tester for examining if an `IPerson` attribute has more than nth values. |
+| `NbValuesLETester` | A tester for examining if an `IPerson` attribute has less or exactly nth values. |
+| `NbValuesLTTester` | A tester for examining if an `IPerson` attribute has less than nth values. |
+| `PropertyInvertedRegexTester` | A tester for matching the possibly multiple values of an attribute against a regular expression obtained from a property value from portal.properties and returning true for a FAILURE to match. |
+| `PropertyRegexTester` | A tester for matching the possibly multiple values of an attribute against a regular expression obtained from a property value specified in portal.properties. |
+| `RegexTester` | Attribute must match a regular expression.  Do not include the delimiter. |
+| `StringEqualsIgnoreCaseTester` | String comparison ignoring case. |
+| `StringEqualsTester` | String comparison. |
+| `ThemeNameEqualsIgnoreCaseTester` | |
+| `ValueExistsTester` | True if the attribute has any non-blank value. |
+| `ValueMissingTester` | True if the attribute is null or none of its values equals the specified value. |
 
 **Test Groups** Individual tests are aggregated into test groups, and their results are AND-ed together, so all tests in a test group must return true for the test group to return true. A test group is described by a <test-group> element. If there is more than 1 <test-group> element, the results of the test groups are OR-ed together, so if any one test group returns true, the tests return true.  A true result means that the candidate IPerson is a member of the group.
 

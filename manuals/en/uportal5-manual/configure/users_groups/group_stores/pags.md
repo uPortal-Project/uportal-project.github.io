@@ -41,7 +41,7 @@ Tests. Each of the tests to be applied to an IPerson is described in a <test> el
 The PAGS currently ships with 8 tester classes, and you can easily create your own.  Each tester class must implement the IPersonTester interface, which consists of a single method:
 
 
-```
+```java
  public interface IPersonTester {
    public boolean test(IPerson person);
  }

@@ -26,7 +26,7 @@ three organizations:
 Each organization should have an existing `uPortal Committers` Team for active
 committers. New committers should be added to these teams.
 
-In general, PRs should be reviewed, approved and merged by committers other than the
+In general, PRs should be reviewed, approved, and merged by committers other than the
 author. A single committer does not need to perform all of these steps.
 
 ## 3. Cutting uPortal-Related Project Releases

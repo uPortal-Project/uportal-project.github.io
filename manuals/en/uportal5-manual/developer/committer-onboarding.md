@@ -14,6 +14,7 @@ participating. This mailing list is where we currently call for voting.
 - uportal-dev@apereo.org
 
 ## 2. Managing Pull Requests
+
 Committers help maintain the quality of the uPortal ecosystem by reviewing and approving
 pull requests in the various uPortal related repos in GitHub. We have organized them into
 three organizations:

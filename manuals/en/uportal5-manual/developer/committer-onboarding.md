@@ -30,6 +30,7 @@ In general, PRs should be reviewed, approved, and merged by committers other tha
 author. A single committer does not need to perform all of these steps.
 
 ## 3. Cutting uPortal-Related Project Releases
+
 The third privilege is cutting releases uPortal, portlet and other projects. We currently
 rely on Maven Central to host our official releases, although we do require NPM ???
 for web components before they are rolling into a webjar that rests in Maven Central.

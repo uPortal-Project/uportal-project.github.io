@@ -49,7 +49,7 @@ The Content-Security-Policy header allows you to restrict which resources can be
 
 By default, the content security policy is disabled in uPortal, but to enable it go to the `security.properties` file and switch the `sec.content.sec.policy.enabled` property to "true". To define the policy, see the documentation at https://content-security-policy.com/ to find the policy that works best for your purpose.
 
-```plaintext
+```properties
  # Content-Security-Policy: default-src, script-src, style-src, img-src
  # See more details at: https://content-security-policy.com/
  sec.content.sec.policy.enabled=false

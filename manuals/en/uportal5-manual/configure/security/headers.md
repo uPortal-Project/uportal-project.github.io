@@ -34,7 +34,7 @@ The following antiClickJacking configurations are included in uPortal, and mimic
 
 Locate the code block below and enable this feature by replacing "false" with "true". The antiClickJackingOptions available are `deny`, `sameorigin`, or `allow-from`. If you select `allow-from`, setup the URI for the `antiClickJackingUri` property. Learn more about which options are best suited for your needs at https://tomcat.apache.org/tomcat-11.0-doc/config/filter.html
 
-```plaintext
+```properties
  # antiClickJackingEnabled:  X-Frame-Options header
  sec.anti.click.jacking.enabled=false
  # X-Frame-Options: deny, sameorigin, allow-from

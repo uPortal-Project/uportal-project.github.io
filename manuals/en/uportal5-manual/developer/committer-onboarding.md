@@ -58,7 +58,8 @@ permissions for the new committer:
     - Modify publishing permissions?: yes
 
 ### 3.2 NPM Set Up
-We also need to release our web components to NPM before they can be rolled into
+
+Web components are released to to NPM, the mirrored to Maven Central as
 webjars.
 
 New committers should create an npm account:

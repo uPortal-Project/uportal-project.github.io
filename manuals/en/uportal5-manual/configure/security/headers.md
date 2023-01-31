@@ -92,7 +92,7 @@ In the following code block located in the `security.properties` file, you can e
 `sec.referrer.policy.enabled` to "true". In the `sec.referrer.policy` you may define your policy based on your preference by
 following the syntax defined at https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
 
-```plaintext
+```properties
  # Referrer-Policy available directives to pass include:
  # See more details at: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
  sec.referrer.policy.enabled=false

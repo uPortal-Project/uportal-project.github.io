@@ -16,7 +16,9 @@ The following security headers that are available to be enabled/disabled include
 
 ## Where to Configure
 
-To customize the security header response options, go to the following file in uPortal:
+To customize the security header response options, add the desired security header keys and their preferred values to `etc/portal/uPortal.properties` in uPortal-start repo, copy this file to $PORTAL_HOME and restart uPortal.
+
+To review the security headers and their defaults, go to the following file in uPortal:
 
 ```bash
  ./uPortal-webapp/src/main/resources/properties/security.properties

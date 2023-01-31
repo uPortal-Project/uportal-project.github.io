@@ -32,8 +32,8 @@ author. A single committer does not need to perform all of these steps.
 ## 3. Cutting uPortal-Related Project Releases
 
 The third privilege is cutting releases uPortal, portlet and other projects. We currently
-rely on Maven Central to host our official releases, although we do require NPM ???
-for web components before they are rolling into a webjar that rests in Maven Central.
+rely on Maven Central to host our official Java releases.
+And `npm` for JavaScript releases, the `npm` releases are also mirrored on Maven Central as [WebJars](https://www.webjars.org) for convenience.
 
 ### 3.1. Sonatype Set Up
 

@@ -36,6 +36,7 @@ rely on Maven Central to host our official releases, although we do require NPM 
 for web components before they are rolling into a webjar that rests in Maven Central.
 
 ### 3.1. Sonatype Set Up
+
 We release through the OSS support provided freely from Sonatype. This requires
 that committers obtain an account with Sonatype's service and that an existing committer
 request the new committer have rights to make releases.

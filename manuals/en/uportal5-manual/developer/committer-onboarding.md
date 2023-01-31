@@ -7,6 +7,7 @@ uPortal Committers have three privileges over other contributors.
 3. Cut releases of uPortal projects.
 
 ## 1. Committer Voting
+
 Committers should have already joined the uPortal Dev mailing list and been actively
 participating. This mailing list is where we currently call for voting.
 

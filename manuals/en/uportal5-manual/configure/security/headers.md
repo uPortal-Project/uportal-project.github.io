@@ -47,7 +47,7 @@ Locate the code block below and enable this feature by replacing "false" with "t
 
 The Content-Security-Policy header allows you to restrict which resources can be loaded and the URLs that can they can be loaded from.
 
-By default, the content security policy is disabled in uPortal, but to enable it go to the security.properties file and switch the sec,content.sec.policy.enabled property to "true". To define the policy, see the documentation at https://content-security-policy.com/ to find the policy that works best for your purpose.
+By default, the content security policy is disabled in uPortal, but to enable it go to the `security.properties` file and switch the `sec.content.sec.policy.enabled` property to "true". To define the policy, see the documentation at https://content-security-policy.com/ to find the policy that works best for your purpose.
 
 ```plaintext
  # Content-Security-Policy: default-src, script-src, style-src, img-src
@@ -62,7 +62,7 @@ Often referred to as HSTS, this response header informs the browser the site sho
 and that any attempts to access it using HTTP should be automatically be converted to HTTPS.
 
 There are a few directives that can be customized. You can refer to the documentation at https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security for guidance. By default, the protocol is disabled and can be configured in the
-security.properties file. The following code block is the section you will customize in the properties file.
+`security.properties` file. The following code block is the section you will customize in the properties file.
 
 ```plaintext
  # Strict-Transport-Security: max-age=###; includeSubDomains; preload
@@ -77,7 +77,7 @@ security.properties file. The following code block is the section you will custo
 The X-Content-Type-Options response header is a marker used by the server to indicate that the MIME types advertised in the
 Content-Type headers should be followed and not be changed.
 
-In the security.properties file, set the sec.x.content.type.enabled property to "true" to enable the response header. The only directive used in this property is "nosniff", which will be used if the property is enabled. Further documentation on this security response header can be found at: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
+In the security.properties file, set the `sec.x.content.type.enabled` property to "true" to enable the response header. The only directive used in this property is "nosniff", which will be used if the property is enabled. Further documentation on this security response header can be found at: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Content-Type-Options
 
 ```plaintext
  # X-Content-Type-Options: "nosniff" will be used if enabled is set to true
@@ -88,8 +88,8 @@ In the security.properties file, set the sec.x.content.type.enabled property to 
 
 Referrer-Policy controls how much referrer information should be included with requests.
 
-In the following code block located in the security.properties file, you can enable the header response by setting
-sec.referrer.policy.enabled to "true". In the sec.referrer.policy you may define your policy based on your preference by
+In the following code block located in the `security.properties` file, you can enable the header response by setting
+`sec.referrer.policy.enabled` to "true". In the `sec.referrer.policy` you may define your policy based on your preference by
 following the syntax defined at https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Referrer-Policy
 
 ```plaintext

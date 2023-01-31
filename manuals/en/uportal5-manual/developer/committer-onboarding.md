@@ -60,7 +60,7 @@ permissions for the new committer:
 We also need to release our web components to NPM before they can be rolled into
 webjars.
 
-New committers should create an account:
+New committers should create an npm account:
 - https://www.npmjs.com/signup
 - ... and send their username to the committer granting them access
 

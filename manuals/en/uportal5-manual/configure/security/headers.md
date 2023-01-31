@@ -64,7 +64,7 @@ and that any attempts to access it using HTTP should be automatically be convert
 There are a few directives that can be customized. You can refer to the documentation at https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security for guidance. By default, the protocol is disabled and can be configured in the
 `security.properties` file. The following code block is the section you will customize in the properties file.
 
-```plaintext
+```properties
  # Strict-Transport-Security: max-age=###; includeSubDomains; preload
  sec.hsts.enabled=false
  sec.hsts.maxage.seconds=31536000

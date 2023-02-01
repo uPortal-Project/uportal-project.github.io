@@ -1,6 +1,6 @@
 ## Lifecycle Management
 
-After you register a new porlet, it can be in one of these five states
+After you register a new portlet, it can be in one of these five states
 
 ### Created
 
@@ -8,7 +8,7 @@ After you register a new porlet, it can be in one of these five states
 
 ### Published
 
-Portlet is registered and visible to the intended audience.  You can set an Automatic Expiration Date and Time.  When the time arrives, the porlet will automatically be moved to the Expired state and will not be visible to the audience.
+Portlet is registered and visible to the intended audience.  You can set an Automatic Expiration Date and Time.  When the time arrives, the portlet will automatically be moved to the Expired state and will not be visible to the audience.
 
 ### Expired
 
@@ -24,9 +24,9 @@ The simple use case is to change the Option from Published to Maintenance and pr
 
 These are the fields for Maintenance Mode
 
-**Custom Message** - displays when a porlet is in maintenance mode
+**Custom Message** - displays when a portlet is in maintenance mode
 
-**Stop Immediately** - Checked by default.  If checked, when you press Save, the portlet will immediately enter Mainenance mode.  If not checked, Stop Date and Stop Time must be set
+**Stop Immediately** - Checked by default.  If checked, when you press Save, the portlet will immediately enter Maintenance mode.  If not checked, Stop Date and Stop Time must be set
 
 **Stop Date** - disabled unless Stop Immediately is unchecked.  Choose the Date from the dropdown for when Maintenance Mode will start.  If not specified, Save will fail with an error message.
 

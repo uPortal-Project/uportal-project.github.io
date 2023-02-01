@@ -61,7 +61,7 @@ The following tester classes (all in the package `org.jasig.portal.groups.pags.t
 | `EagerRegexTester` | A tester for matching multiple values of an attribute against a regular expression. |
 | `GuestUserTester` | Evaluates whether the user is a guest. |
 | `InjectAttributeRegexTester` | A tester for matching the possibly multiple values of an attribute against a regular expression, and in replacing a pattern by an other user attribute (optional use). |
-| `IntegerEQTester` | Converts attribute and test value to ints. Attribute must be EQ to the test value.  In the event of a `NumberFormatException`, the test fails (true for all Integer testers.) |
+| `IntegerEQTester` | Converts attribute and test value to integers. Attribute must be EQ to the test value.  In the event of a `NumberFormatException`, the test fails (true for all Integer testers.) |
 | `IntegerGETester` | Attribute must be GE test value. |
 | `IntegerGTTester` | Attribute must be GT test value. |
 | `IntegerLETester` | Attribute must be LE test value. |

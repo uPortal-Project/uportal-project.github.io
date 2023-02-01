@@ -5,7 +5,7 @@ In that way you will be able to deploy every application packaged as WAR, like p
 
 ## Create `my-portlet` Directory
 
-First step is to create a `my-portlet/` directory in the overlay forlder for your portlet to deploy.
+First step is to create a `my-portlet/` directory in the overlay folder for your portlet to deploy.
 
 ```sh
 $ mkdir -p overlays/my-portlet
@@ -42,4 +42,4 @@ MyPortletVersion=X.Y
 ## Customize the deployment
 
 You can customize the packages properties with the overlay system by providing a customized version of war files following the same path deployed file.
-As example you can cutomize log configurations, for that copy from the deployed path the logback.xml file and customize it !
+As example you can customize log configurations, for that copy from the deployed path the logback.xml file and customize it !

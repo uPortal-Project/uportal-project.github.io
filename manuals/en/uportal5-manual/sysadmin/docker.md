@@ -70,7 +70,7 @@ Here are the steps to setup uPortal Demo as a Docker image and then run it as a 
   - Export uPortal Web image
     - `$ docker save -o uportal-v5.7.0-01.image apereo/uportal`
   - Save image file to repository
-  - Copy image to servers, preferrable to uPortal user home directory
+  - Copy image to servers, preferable to uPortal user home directory
 
 ### Setup on Servers
 
@@ -82,7 +82,7 @@ Here are the steps to setup uPortal Demo as a Docker image and then run it as a 
     - `$ sudo chown portal /opt/uportal/portal`
   - Copy/update configuration files for local server
     - This is usually also managed with an Ops system
-    - At miminum, should have:
+    - At minimum, should have:
       - `/opt/uportal/portal/global.properties`
       - `/opt/uportal/portal/uPortal.properties`
 

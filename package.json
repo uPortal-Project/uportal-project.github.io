@@ -1,0 +1,12 @@
+{
+  "name": "uportal-project.github.io",
+  "private": true,
+  "scripts": {
+    "test:spellCheck": "cspell \"**/*.md\"",
+    "test": "npm run test:spellCheck"
+  },
+  "devDependencies": {
+    "cspell": "~6.20.0",
+    "@cspell/dict-fr-fr": "~2.2.0"
+  }
+}

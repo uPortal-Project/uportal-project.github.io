@@ -1,4 +1,4 @@
-# Implementation front end Implementation / Personalisation
+# Implementation front end Implementation / Personnalisation
 uPortal offre des possibilités flexibles pour personnaliser l'aspect et la convivialité de l'expérience utilisateur.
 
 ## Sujets

@@ -25,7 +25,7 @@ Concrètement cela signifie que:
 
 - On DOIT activer les portlets Angular en effectuant l'une des opérations suivantes:
     - Vérifier dans le contenu de la portlet, le commentaire de la "directive" 
-    `<!-- uportal-use-angular -->`, et s'il est trouvé, utilisez le service de $compile sur les noeuds DOM.
+    `<!-- uportal-use-angular -->`, et s'il est trouvé, utilisez le service de $compile sur les nœud DOM.
     - Utilisez le service `$compile` pour compiler les nœuds DOM de toutes les portlets chargées.
     - En supplément cela à l'avantage de permettre au portail d'appliquer des directives à des contenus standard de portlets existants si vous le souhaitez.
     
@@ -227,10 +227,10 @@ $controllerProvider, $provide) {
   'use strict';
 
   if (window.up.ngApp) {
-    //If loaded, register right away.
+    // If loaded, register right away.
     register(window.up.ngApp);
   } else {
-    //Otherwise, let jsp call your bootstrapper once Angular is loaded.
+    // Otherwise, let jsp call your bootstrap code once Angular is loaded.
     window.up = window.up || {};
     window.up.ngBootstrap = window.up.ngBootstrap || {};
 

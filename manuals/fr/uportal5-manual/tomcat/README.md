@@ -26,7 +26,7 @@ tar -zxvf apache-tomcat-8.0.33.tar.gz
 
 ### 3. Renommer
 
-*Optionnellement* renommer votre installation en quelquechose de plus signifiant :
+*Optionnellement* renommer votre installation en quelque chose de plus signifiant :
 
 ```shell_session
 mv apache-tomcat-8.0.33 uportal-tomcat
@@ -123,7 +123,7 @@ Pour activer cette fonctionnalité pour Tomcat 7 ou 8, ajoutez `sessionCookiePat
 
 ### Augmenter la taille du cache de ressources
 
-uPortal et la collection typique de ses portlets prennent beaucoup de place. Tomcat 8.5 émet des avertissements sur l'épuisement de l'espace de cache des ressources. Ajoutez la configuration de cache suivante juste avant la _fermeture_ du noeud `Context`.
+uPortal et la collection typique de ses portlets prennent beaucoup de place. Tomcat 8.5 émet des avertissements sur l'épuisement de l'espace de cache des ressources. Ajoutez la configuration de cache suivante juste avant la _fermeture_ du nœud `Context`.
 
 ```xml
 <Resources cachingAllowed="true" cacheMaxSize="100000" />
@@ -161,7 +161,7 @@ Le GZipping du contenu HTML peut être effectué via Tomcat. Pour activer cette 
 <Connector port="8080" protocol="HTTP/1.1"
   connectionTimeout="20000" redirectPort="8443"
   compression="on" 
-  compressableMimeType="text/html,text/xml,text/plain,text/css,text/javascript,application/javascript"/>
+  compressibleMimeType="text/html,text/xml,text/plain,text/css,text/javascript,application/javascript"/>
 ```
 
 Vous pouvez éventuellement spécifier `compressionMinSize` ou le laisser à sa valeur par défaut de 2048 octets.
@@ -190,7 +190,7 @@ La valeur par défaut de Tomcat est de 30 minutes.
 
 #### paramétrages JVM
 
-+ [Exemple de paramètrage JVM](https://wiki.jasig.org/display/UPC/JVM+Configurations)
++ [Exemple de paramétrage JVM](https://wiki.jasig.org/display/UPC/JVM+Configurations)
 + [Heap tuning](https://wiki.jasig.org/display/UPC/uPortal+Heap+Tuning)
 
 #### Désactiver SSLv3

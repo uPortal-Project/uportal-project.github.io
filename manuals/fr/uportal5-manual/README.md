@@ -5,7 +5,7 @@
 ## À propos d'uPortal-start
 
 uPortal-start est le mécanisme grâce auquel des individus ou des institutions adoptent et installent [Apereo uPortal][],
-le framework open-source et leader en solution de portail d'entreprise, developpé par et pour l'enseignement supérieur, 
+le framework open-source et leader en solution de portail d'entreprise, développé par et pour l'enseignement supérieur, 
 les lycées et collèges et les communautés de Recherche. **uPortal-start est une nouveauté d'uPortal 5.0**
 
 uPortal-start va vous aider à gérer:
@@ -61,13 +61,13 @@ avec un _Wrapper Gradle_, donc vous n'avez pas besoin d'installer Gradle pour l'
 Pour invoquer le Wrapper Gradle sur \*nix :
 
 ```console
-    $ ./gradlew {taskname} [{taskname}...]
+    $ ./gradlew {task name} [{task name}...]
 ```
 
 Pour invoquer le Wrapper Gradle sur Windows :
 
 ```console
-    > gradlew.bat {taskname} [{taskname}...]
+    > gradlew.bat {task name} [{task name}...]
 ```
 
 _NOTE :  Pour des raison de simplicité, les exemples restants de ce document sont sur \*nix._
@@ -226,7 +226,7 @@ Vous pouvez arrêter le serveur Tomcat en utilisant cette commande :
 
 En assumant que tous les paramètres par défaut sont conservés :
 * L'URL d'accès à uPortal est :  <http://localhost:8080/uPortal/>
-* En utilisant les crédentials en exemple, vous pouvez bypasser CAS en test local. les logins / URL sont :
+* En utilisant les informations d'identification en exemple, vous pouvez contourner CAS en test local. les logins / URL sont :
   * admin: <http://localhost:8080/uPortal/Login?userName=admin&password=admin>
   * faculty: <http://localhost:8080/uPortal/Login?userName=faculty&password=faculty>
   * staff <http://localhost:8080/uPortal/Login?userName=staff&password=staff>

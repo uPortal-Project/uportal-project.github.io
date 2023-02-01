@@ -6,7 +6,7 @@ because it invokes the concepts of _movement_ and _throughput_, but in software 
 known as the [Decorator Pattern][].
 
 The Java interface at the center of the uPortal Rendering Pipeline is `IPortalRenderingPipeline`.
-Instances of `IPortalRenderingPipeline` are Spring-managed beans.  The primary rendering pipline
+Instances of `IPortalRenderingPipeline` are Spring-managed beans.  The primary rendering pipeline
 bean is assigned an id (in Spring) of `portalRenderingPipeline`.  Components in other parts of the
 portal (outside the Rendering Pipeline) use this bean (exclusively) to interact with rendering in
 the portal.

@@ -19,7 +19,7 @@ $JAVA_HOME/bin/keytool -genkey -alias tomcat -keyalg RSA
 + Les prochaines invites de commandes seront utilisées pour générer un certificat auto-signé pour votre nouvelle clé privée. Si vous êtes familier avec openssl, les champs vous sont présentés dans l'ordre inverse:
 + Quel est votre nom et prénom? (Cela correspond à CN et doit correspondre au nom de domaine que vos clients utiliseront pour accéder à votre instance uPortal. Exemple : <strong>your-host.university.edu</strong>)
 + Quel est le nom de votre unité organisationnelle? (OU, Exemple : <strong>Direction des systèmes d'information </strong>)
-+ Quel est le nom de votre organisation? (O, Exemple : <strong>Université de quelquepart </strong>)
++ Quel est le nom de votre organisation? (O, Exemple : <strong>Université de quelque-part </strong>)
 + Quel est le nom de votre ville ou localité? (L, Exemple : <strong>Quelque part</strong>)
 + Quel est le nom de votre état ou province? (ST, exemple : <strong>Toulouse</strong>)
 + Quel est le code de pays à deux lettres pour cette unité? (C, Exemple : <strong>FR</strong>)

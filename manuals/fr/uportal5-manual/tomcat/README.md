@@ -26,7 +26,7 @@ tar -zxvf apache-tomcat-8.0.33.tar.gz
 
 ### 3. Renommer
 
-*Optionnellement* renommer votre installation en quelquechose de plus signifiant :
+*Optionnellement* renommer votre installation en quelque chose de plus signifiant :
 
 ```shell_session
 mv apache-tomcat-8.0.33 uportal-tomcat

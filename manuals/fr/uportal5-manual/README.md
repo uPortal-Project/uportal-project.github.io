@@ -226,7 +226,7 @@ Vous pouvez arrêter le serveur Tomcat en utilisant cette commande :
 
 En assumant que tous les paramètres par défaut sont conservés :
 * L'URL d'accès à uPortal est :  <http://localhost:8080/uPortal/>
-* En utilisant les crédentials en exemple, vous pouvez bypasser CAS en test local. les logins / URL sont :
+* En utilisant les informations d'identification en exemple, vous pouvez contourner CAS en test local. les logins / URL sont :
   * admin: <http://localhost:8080/uPortal/Login?userName=admin&password=admin>
   * faculty: <http://localhost:8080/uPortal/Login?userName=faculty&password=faculty>
   * staff <http://localhost:8080/uPortal/Login?userName=staff&password=staff>

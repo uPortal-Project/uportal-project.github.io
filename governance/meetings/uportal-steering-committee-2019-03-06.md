@@ -17,7 +17,7 @@ We discussed reporting out to the lists a summary of the summits.
 * Improved web presence  
 * Migrate usable content from wiki to Github  
 * Improve internationalization of documentation  
-We discussed concerns that some nternational participants may feel isolated.
+We discussed concerns that some international participants may feel isolated.
 * Clarify maven release process  
 * Clarify uPortal Supporting Subscription program  
 * Establish a uPortal demo site  

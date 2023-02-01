@@ -1,6 +1,6 @@
 # Intégrations
 
-uPortal, comme de nombreuses applications Web qui aggrègent des services,
+uPortal, comme de nombreuses applications Web qui agrègent des services,
 fait face à des défis avec l'intégration. Ici, nous collectons des solutions
 à partager avec les intégrateurs.
 

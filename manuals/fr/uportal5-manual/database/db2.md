@@ -47,7 +47,7 @@ Ajouter les propriétés de version appropriées au fichier racine `pom.xml` ou 
   </dependency>
   <!--
    | The following db drivers should be uncommented and/or modified as needed for server 
-   | deployments.  (Add all thaat are needed.)  Don't forget to add appropriate  .version 
+   | deployments.  (Add all that are needed.)  Don't forget to add appropriate  .version 
    | properties to the root pom.xml, or simply enter the appropriate version below.
    +-->
   <!--

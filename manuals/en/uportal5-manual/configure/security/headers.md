@@ -60,7 +60,7 @@ By default, the content security policy is disabled in uPortal, but to enable it
 
 ### Strict-Transport-Protocol
 
-Often referred to as HSTS, this response header informs the browser the site should only be accessed uding HTTPS,
+Often referred to as HSTS, this response header informs the browser the site should only be accessed using HTTPS,
 and that any attempts to access it using HTTP should be automatically be converted to HTTPS.
 
 There are a few directives that can be customized. You can refer to the documentation at https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security for guidance. By default, the protocol is disabled and can be configured in the

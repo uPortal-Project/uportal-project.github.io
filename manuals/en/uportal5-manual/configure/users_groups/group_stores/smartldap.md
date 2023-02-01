@@ -85,7 +85,7 @@ Example `attributesMapper` Bean:
 
         <!--
          | This parameter is used to extract the id path of the groups
-         | from their dn. The id path is expected to be catched from the first group
+         | from their dn. The id path is expected to be caught from the first group
          | of the regex.
         <property name="childGroupKeyRegex" value="cn=(.*),ou=Groups,dc=apereo,dc=org"/>
         <property name="childGroupKeyRegex" value="cn=(.*),ou=.*,dc=apereo,dc=org"/>

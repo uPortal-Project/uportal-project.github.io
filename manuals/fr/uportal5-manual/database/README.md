@@ -75,7 +75,7 @@ environment.build.hibernate.dialect=org.hibernate.dialect.SQLServerDialect
 environment.build.hibernate.connection.validationQuery=select 1
 ```
 
-## Étape 5: Configuration spécifique portlet / uPortal (optionel)
+## Étape 5: Configuration spécifique portlet / uPortal (optionnel)
 
 La configuration utilisée par défaut pour déployer toutes les applications vient du fichier `global.properties` dans le répertoire `portal.home`.
 Mais il est tout à fait possible de définir une configuration par application/portlet, le fichier `global.properties` sera toujours utilisé mais il peut être surchargé par un fichier spécifique s'il est trouvé.

@@ -190,7 +190,7 @@ La valeur par défaut de Tomcat est de 30 minutes.
 
 #### paramétrages JVM
 
-+ [Exemple de paramètrage JVM](https://wiki.jasig.org/display/UPC/JVM+Configurations)
++ [Exemple de paramétrage JVM](https://wiki.jasig.org/display/UPC/JVM+Configurations)
 + [Heap tuning](https://wiki.jasig.org/display/UPC/uPortal+Heap+Tuning)
 
 #### Désactiver SSLv3

@@ -4,7 +4,7 @@ uPortal supports loading external properties files to facilitate configuration
 differences between _dev_, _test_, _production_, etc. This allows a single
 Docker image or Tomcat zip to be used in all environments / clusters.
 
-Sometimes Tomcat configuration also needs to vary between evironments.
+Sometimes Tomcat configuration also needs to vary between environments.
 Examples are port numbers, SSL values, and load balancer IPs.
 
 In the following examples, we will make the HTTP port an external variable.

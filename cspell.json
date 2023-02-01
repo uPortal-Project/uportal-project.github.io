@@ -15,6 +15,8 @@
     ],
     "words": [
         "Apereo",
+        "changeit",
+        "classpath",
         "Cousquer",
         "ehcache",
         "ESCO",
@@ -32,6 +34,7 @@
         "InnoDB",
         "Jasig",
         "jasypt",
+        "javadoc",
         "JAXB",
         "jconnect",
         "JDBC",
@@ -39,6 +42,7 @@
         "jmeter",
         "JPDA",
         "LISEZMOI",
+        "logback",
         "Lucene",
         "mysqldb",
         "PAGS",
@@ -52,11 +56,13 @@
         "Respondr",
         "roadmap",
         "sameorigin",
-        "Servlet",
         "Serverlet",
         "Serverlets",
+        "Servlet",
         "smartldap",
         "Sonatype",
+        "springframework",
+        "stax",
         "sybase",
         "Toben",
         "uPortal",
@@ -64,8 +70,6 @@
         "webjar",
         "webjars",
         "wolverine",
-        "Woodle",
-        "logback",
-        "springframework"
+        "Woodle"
     ]
 }

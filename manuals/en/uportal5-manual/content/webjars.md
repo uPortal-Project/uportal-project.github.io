@@ -24,7 +24,7 @@ WebJar implementations are not available.
 ```
 
 **NOTE:** In most cases, you should include the `@jar` classifier with your WebJar dependency.  This
-classifier tells Gralde not to pull transitive dependencies of your WebJar.  (Transitive
+classifier tells Gradle not to pull transitive dependencies of your WebJar.  (Transitive
 dependencies may be needed if you were extending the component in Node.js, but typically aren't
 required for using the component in a browser.)
 
@@ -34,5 +34,5 @@ Once your WebJar is available within the `resource-server`, you can access the f
 your browser by using URLs like the following:
 `/resource-server/webjars/uportal__content-carousel/1.6.0/dist/content-carousel.js`.
 
-In this exable, `/uportal__content-carousel/1.6.0/dist/content-carousel.js` is the complete path to
+In this example, `/uportal__content-carousel/1.6.0/dist/content-carousel.js` is the complete path to
 the `content-carousel.js` file within the webjar.

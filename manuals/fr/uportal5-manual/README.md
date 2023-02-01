@@ -5,7 +5,7 @@
 ## À propos d'uPortal-start
 
 uPortal-start est le mécanisme grâce auquel des individus ou des institutions adoptent et installent [Apereo uPortal][],
-le framework open-source et leader en solution de portail d'entreprise, developpé par et pour l'enseignement supérieur, 
+le framework open-source et leader en solution de portail d'entreprise, développé par et pour l'enseignement supérieur, 
 les lycées et collèges et les communautés de Recherche. **uPortal-start est une nouveauté d'uPortal 5.0**
 
 uPortal-start va vous aider à gérer:

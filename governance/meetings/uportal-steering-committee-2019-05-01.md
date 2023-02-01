@@ -7,7 +7,7 @@ Jim Helwig, Cheryl Palafox-Stewart,  Lauren Anderson, Laura McCord
 * An apereo.org website revamping may be approved in the near future. The uPortal (and other projects) presence on the new site will generally be a single landing page. We will be looking for volunteers to help migrate content to a new Github-based project site.
 
 ## Open Apereo
-Presentations have been scheduled. We discussed how best to use the three uPortal roundtable discussions in the schedule. 
+Presentations have been scheduled. We discussed how best to use the three uPortal round table discussions in the schedule. 
 
 ## uPortal annual report
 We noted that we need to start collecting information for the uPortal annual report.

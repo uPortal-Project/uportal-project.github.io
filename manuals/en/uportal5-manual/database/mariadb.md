@@ -42,14 +42,14 @@ Connect to the database server.
 ```SQL
 CREATE USER 'uportal'@'localhost' IDENTIFIED BY 'uportal';
 create database uportal CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
-GRANT ALL PRIVILEGES ON uportal.* TO 'portail'@'localhost';
+GRANT ALL PRIVILEGES ON uportal.* TO 'uportal'@'localhost';
 # If you want to install portlets on a specific database
 # create database portlet CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci;
-# GRANT ALL PRIVILEGES ON portlets.* TO 'portail'@'localhost';
+# GRANT ALL PRIVILEGES ON portlets.* TO 'uportal'@'localhost';
 ```
 
 With MariaDb and Mysql the default character set should be set to `utf8mb4` instead of `utf8` as the mysql UTF-8 encoding is only a support of 3-bytes UTF-8 unicode encoding.
-The 3-bytes part is not a full UTF-8 support, this won't support Asian characters and émoticônes files. [See here for more details](https://dev.mysql.com/doc/refman/5.5/en/charset-unicode.html)
+The 3-bytes part is not a full UTF-8 support, this won't support Asian characters and emoticons files. [See here for more details](https://dev.mysql.com/doc/refman/5.5/en/charset-unicode.html)
 
 Also the collation `utf8mb4_unicode_520_ci` is a new best algorithm for ordering UTF-8 values, but you can stay on 'utf8_unicode_ci' [see the mysql documentation for details](https://dev.mysql.com/doc/refman/5.6/en/charset-collation-names.html)
 

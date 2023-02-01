@@ -10,6 +10,15 @@
                 "en_us",
                 "fr-fr",
                 "java"
+            ],
+            "words": [
+                "décommenter",
+                "Décommentez",
+                "déployeurs",
+                "émoticônes",
+                "implémenteurs",
+                "LISEZMOI",
+                "réexécuter"
             ]
         }
     ],
@@ -26,9 +35,6 @@
         "Dartifact",
         "dbtest",
         "Ddir",
-        "décommenter",
-        "Décommentez",
-        "déployeurs",
         "Dfile",
         "Dgenerate",
         "Dgroup",
@@ -40,7 +46,6 @@
         "Dskin",
         "Dversion",
         "ehcache",
-        "émoticônes",
         "ESCO",
         "ESUP",
         "Fiosan",
@@ -55,7 +60,6 @@
         "HSQLDB",
         "HSTS",
         "ibdata",
-        "implémenteurs",
         "initdb",
         "initportal",
         "InnoDB",
@@ -75,7 +79,6 @@
         "keyservers",
         "keytool",
         "lbfactor",
-        "LISEZMOI",
         "logback",
         "Lucene",
         "maxage",
@@ -98,7 +101,6 @@
         "Quickstart",
         "Ragusa",
         "RDBMS",
-        "réexécuter",
         "Respondr",
         "roadmap",
         "sameorigin",
@@ -125,6 +127,6 @@
         "webjars",
         "wolverine",
         "Woodle",
-        "zxvf",
+        "zxvf"
     ]
 }

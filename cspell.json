@@ -1,0 +1,71 @@
+{
+    "$schema": "https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json",
+    "import": [
+        "@cspell/dict-fr-fr/cspell-ext.json"
+    ],
+    "overrides": [
+        {
+            "filename": "manuals/fr/**/*.md",
+            "dictionaries": [
+                "en_us",
+                "fr-fr",
+                "java"
+            ]
+        }
+    ],
+    "words": [
+        "Apereo",
+        "Cousquer",
+        "ehcache",
+        "ESCO",
+        "ESUP",
+        "Fiosan",
+        "fname",
+        "fontawesome",
+        "Goodfellow",
+        "gradlew",
+        "Gribonvald",
+        "Helwig",
+        "HSQL",
+        "HSQLDB",
+        "HSTS",
+        "InnoDB",
+        "Jasig",
+        "jasypt",
+        "JAXB",
+        "jconnect",
+        "JDBC",
+        "jgroups",
+        "jmeter",
+        "JPDA",
+        "LISEZMOI",
+        "Lucene",
+        "mysqldb",
+        "PAGS",
+        "Palafox",
+        "portail",
+        "portlet",
+        "portlets",
+        "quickstart",
+        "Quickstart",
+        "Ragusa",
+        "Respondr",
+        "roadmap",
+        "sameorigin",
+        "Servlet",
+        "Serverlet",
+        "Serverlets",
+        "smartldap",
+        "Sonatype",
+        "sybase",
+        "Toben",
+        "uPortal",
+        "webapps",
+        "webjar",
+        "webjars",
+        "wolverine",
+        "Woodle",
+        "logback",
+        "springframework"
+    ]
+}

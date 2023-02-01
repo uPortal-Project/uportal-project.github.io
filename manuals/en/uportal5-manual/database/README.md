@@ -57,7 +57,7 @@ hibernate.connection.validationQuery=select 1
 
 ## Step 4: Copy `global.properties` to local environment location and add credentials and URL
 
-In uPortal 5, deployers are strongly encouraged to configure a local `portal.home` directory to keep configuration that is specific to the environment but should not be captured in a repo. In particular, database and other service
+In uPortal 5, adopters are strongly encouraged to configure a local `portal.home` directory to keep configuration that is specific to the environment but should not be captured in a repo. In particular, database and other service
 credentials should not be captured. If `portal.home` is not configured, the default is the portal/ directory in Tomcat.
 
 During `./gradlew portalInit` or `./gradlew tomcatInstall`, the files from the repo's `etc/portal/` directory are

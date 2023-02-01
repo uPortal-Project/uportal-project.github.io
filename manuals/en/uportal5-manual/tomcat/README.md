@@ -21,7 +21,7 @@ See also
 
 ### 2. Extract
 
-Untar the package as follows:
+Extract the package as follows:
 
 ```shell_session
 tar -zxvf apache-tomcat-8.0.33.tar.gz

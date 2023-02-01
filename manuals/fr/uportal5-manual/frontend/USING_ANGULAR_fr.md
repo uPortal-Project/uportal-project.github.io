@@ -227,10 +227,10 @@ $controllerProvider, $provide) {
   'use strict';
 
   if (window.up.ngApp) {
-    //If loaded, register right away.
+    // If loaded, register right away.
     register(window.up.ngApp);
   } else {
-    //Otherwise, let jsp call your bootstrapper once Angular is loaded.
+    // Otherwise, let jsp call your bootstrap code once Angular is loaded.
     window.up = window.up || {};
     window.up.ngBootstrap = window.up.ngBootstrap || {};
 

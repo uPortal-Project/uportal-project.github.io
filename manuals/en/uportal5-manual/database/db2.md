@@ -8,7 +8,7 @@ As an alternative to this, you could set up a maven repository for use by multip
 
 A JDBC DB2 driver is included in the DB2 software in the `java` subdirectory after DB2 installation has been performed. To install the JAR into your local maven repository, use the following command:
 
-```
+```shell
 mvn install:install-file -DgroupId=com.ibm.db2 -DartifactId=db2-jdbc -Dversion=<version> -Dpackaging=jar -DgeneratePom=true -Dfile=db2java.zip.jar
 ```
 
@@ -19,7 +19,7 @@ The `groupId`, `artifactId` and `version` specified in this command are up to yo
 
 In the filters folder, locate the default `local.properties` file under `uPortal-4.1.x/filters/local.properties` and configure the Database Connection Settings
 
-```shell
+```properties
 # HSQL Configuration
 environment.build.hsql.port=8887
 
@@ -48,7 +48,7 @@ Add the appropriate version properties to the root `pom.xml` file or enter the a
   </dependency>
   <!--
    | The following db drivers should be uncommented and/or modified as needed for server 
-   | deployments.  (Add all thaat are needed.)  Don't forget to add appropriate  .version 
+   | deployments.  (Add all that are needed.)  Don't forget to add appropriate  .version 
    | properties to the root pom.xml, or simply enter the appropriate version below.
    +-->
   <!--

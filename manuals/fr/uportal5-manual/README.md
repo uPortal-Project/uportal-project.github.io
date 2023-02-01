@@ -61,13 +61,13 @@ avec un _Wrapper Gradle_, donc vous n'avez pas besoin d'installer Gradle pour l'
 Pour invoquer le Wrapper Gradle sur \*nix :
 
 ```console
-    $ ./gradlew {taskname} [{taskname}...]
+    $ ./gradlew {task name} [{task name}...]
 ```
 
 Pour invoquer le Wrapper Gradle sur Windows :
 
 ```console
-    > gradlew.bat {taskname} [{taskname}...]
+    > gradlew.bat {task name} [{task name}...]
 ```
 
 _NOTE :  Pour des raison de simplicité, les exemples restants de ce document sont sur \*nix._

@@ -77,7 +77,7 @@ hibernate.connection.validationQuery=select 1
 ## Step 5: Specific portlet / uPortal database configuration (optional)
 
 The default configuration come from the file `global.properties` in the `portal.home` directory to deploy all applications.
-But it's possible to define a specific configuration per application/portlet, the `global.properties` will be always used but it could be overriden by a specific property file if found.
+But it's possible to define a specific configuration per application/portlet, the `global.properties` will be always used but it could be overridden by a specific property file if found.
 
 For the uPortal database you will need to add database's' properties from `global.properties` into `uPortal.properties` file.
 For each portlets you should define same properties by adding the `specific-portlet.properties` into the `portal.home` directory, where `specific-portlet.properties` is the file name defined in the portlet spring context definition sources.

@@ -23,7 +23,7 @@ Various configurations for the have been exposed - see `baseline.properties.samp
 Current method is to run via a standalone JMeter:
 
 ```sh
-$ sh {jmeter-install}/bin/jmeter.sh -p buildSrc/src/test/perf/{myconfig}.properties -t buildSrc/src/test/perf/baseline.jmx
+$ sh {jmeter-install}/bin/jmeter.sh -p buildSrc/src/test/perf/{my config}.properties -t buildSrc/src/test/perf/baseline.jmx
 ```
 
 As a proof-of-concept, you can execute the baseline scripts via Gradle.  The Gradle process is noted here as a possible CI hook for running perf tests at each commit / PR in the future.

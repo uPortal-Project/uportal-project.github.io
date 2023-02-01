@@ -19,7 +19,7 @@ cors.allowed.origins=https://idp.myschool.edu, https://cas.myschool.edu
 ```
 
 Dans l'exemple ci-dessus, deux services sont ajoutés à la liste blanche. Dans un cas réel,
-un seul CAS ou Shib serait utilisé. Notez également que le protocole
+un seul CAS ou Shibboleth serait utilisé. Notez également que le protocole
 doit être spécifié.
 
 Voir : [CORS](https://developer.mozilla.org/fr/docs/Web/HTTP/Access_control_CORS)

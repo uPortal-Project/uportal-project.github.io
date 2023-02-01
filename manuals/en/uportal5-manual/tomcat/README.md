@@ -157,13 +157,13 @@ Several uPortal webapps write to their deployed webapps folder to add dynamic co
 
 Browser-side performance may be improved by GZip-ping downloaded content where appropriate. uPortal 4 already GZips some CSS and JavaScript. uPortal does not, however, GZip the uPortal page itself.
 
-GZipping of HTML content can be performed via Tomcat. To enable this functionality, set `compression="on"` in the in-use Tomcat connector, and optionally set the list of compressable mime types. More information about this feature can be found in the [Tomcat configuration page][].
+GZipping of HTML content can be performed via Tomcat. To enable this functionality, set `compression="on"` in the in-use Tomcat connector, and optionally set the list of compressible mime types. More information about this feature can be found in the [Tomcat configuration page][].
 
 ```xml
 <Connector port="8080" protocol="HTTP/1.1"
   connectionTimeout="20000" redirectPort="8443"
   compression="on"
-  compressableMimeType="text/html,text/xml,text/plain,text/css,text/javascript,application/javascript"/>
+  compressibleMimeType="text/html,text/xml,text/plain,text/css,text/javascript,application/javascript"/>
 ```
 
 You can optionally specify compressionMinSize or leave it at it's default value of 2048 bytes.

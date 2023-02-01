@@ -17,7 +17,7 @@ $JAVA_HOME/bin/keytool -genkey -alias tomcat -keyalg RSA
 
 + Vous serez invité à entrer le "mot de passe du keystore" qui a la valeur par défaut `changeit`.
 + Les prochaines invites de commandes seront utilisées pour générer un certificat auto-signé pour votre nouvelle clé privée. Si vous êtes familier avec openssl, les champs vous sont présentés dans l'ordre inverse:
-+ Quel est votre nom et prénom? (Cela correspond à CN et doit correspondre au nom de domaine que vos clients utiliseront pour accéder à votre instance uPortal. Exemple : <strong>yourhost.university.edu</strong>)
++ Quel est votre nom et prénom? (Cela correspond à CN et doit correspondre au nom de domaine que vos clients utiliseront pour accéder à votre instance uPortal. Exemple : <strong>your-host.university.edu</strong>)
 + Quel est le nom de votre unité organisationnelle? (OU, Exemple : <strong>Direction des systèmes d'information </strong>)
 + Quel est le nom de votre organisation? (O, Exemple : <strong>Université de quelquepart </strong>)
 + Quel est le nom de votre ville ou localité? (L, Exemple : <strong>Quelque part</strong>)
@@ -111,6 +111,6 @@ Vous devriez voir l'autorité de certification dans la chaîne de certificats.
 
 ## Références supplémentaires
 
-+ [Tomcat SSL Howto](http://tomcat.apache.org/tomcat-7.0-doc/ssl-howto.html)
++ [Tomcat SSL How-To](http://tomcat.apache.org/tomcat-7.0-doc/ssl-howto.html)
 + [Apache httpd SSL documentation](http://httpd.apache.org/docs/2.2/ssl/)
 + [Apache httpd SSL FAQ](http://httpd.apache.org/docs/2.2/ssl/ssl_faq.html)

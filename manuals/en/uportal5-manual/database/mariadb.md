@@ -49,7 +49,7 @@ GRANT ALL PRIVILEGES ON uportal.* TO 'portail'@'localhost';
 ```
 
 With MariaDb and Mysql the default character set should be set to `utf8mb4` instead of `utf8` as the mysql UTF-8 encoding is only a support of 3-bytes UTF-8 unicode encoding.
-The 3-bytes part is not a full UTF-8 support, this won't support Asian characters and emoticones files. [See here for more details](https://dev.mysql.com/doc/refman/5.5/en/charset-unicode.html)
+The 3-bytes part is not a full UTF-8 support, this won't support Asian characters and émoticônes files. [See here for more details](https://dev.mysql.com/doc/refman/5.5/en/charset-unicode.html)
 
 Also the collation `utf8mb4_unicode_520_ci` is a new best algorithm for ordering UTF-8 values, but you can stay on 'utf8_unicode_ci' [see the mysql documentation for details](https://dev.mysql.com/doc/refman/5.6/en/charset-collation-names.html)
 
@@ -82,7 +82,7 @@ hibernate.connection.password=uportal
 hibernate.connection.validationQuery=select 1
 hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
 ```
-You should copy/paste this configuration for each customized database portlet/uPortal context [see global datasource documentation](README.md#step-5-specific-portlet--uportal-database-configuration-optional)
+You should copy/paste this configuration for each customized database portlet/uPortal context [see global data source documentation](README.md#step-5-specific-portlet--uportal-database-configuration-optional)
 
 **NOTE:** Before mariaDB 10.1.35 using the Dialect `org.apereo.portal.utils.MySQL5InnoDBCompressedDialect` was needed if you didn't configured your mariaDB server with the [default row_format or equivalent](mariadb.md#step-1-mariadb-server-setup)
 

@@ -26,7 +26,7 @@ To review the security headers and their defaults, go to the following file in u
 
 ### X-Frame-Options
 
-Also known as antiClickJacking (https://tomcat.apache.org/tomcat-11.0-doc/config/filter.html), clickjacking is an attack that fools users into thinking they are clicking on one thing when they are actually clicking on another.
+Also known as antiClickJacking (https://tomcat.apache.org/tomcat-11.0-doc/config/filter.html), click jacking is an attack that fools users into thinking they are clicking on one thing when they are actually clicking on another.
 
 The following antiClickJacking configurations are included in uPortal, and mimic the configuration options that are also available directly through the tomcat server config file.
 

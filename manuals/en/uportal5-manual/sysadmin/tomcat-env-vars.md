@@ -76,7 +76,7 @@ Continuing with our examples, we can now set the HTTP port in `conf/server.xml`:
                maxThreads="1200"
                compression="on" 
                compressionMinSize="1024" 
-               compressableMimeType="text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json"
+               compressibleMimeType="text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json"
     />
 ```
 

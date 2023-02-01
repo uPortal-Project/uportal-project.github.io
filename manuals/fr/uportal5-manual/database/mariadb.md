@@ -85,7 +85,7 @@ hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
 
 Vous devez copier/coller cette configuration pour chaque personnalisation d'accès à la base de données des contextes portlets / uPortal [cf configuration générale des bases de données](README.md#%C3%A9tape-5-configuration-sp%C3%A9cifique-portlet--uportal-optionnel)
 
-**NOTE:** Avant mariaDB 10.1.35 il fallait utiliser le dialect `org.apereo.portal.utils.MySQL5InnoDBCompressedDialect` si vous n'aviez pas configuré votre serveur mariaDB avec le [row_format par défault ou équivalent](mariadb.md#Étape-1--paramétrage-du-server-mariadb).
+**NOTE:** Avant mariaDB 10.1.35 il fallait utiliser le dialect `org.apereo.portal.utils.MySQL5InnoDBCompressedDialect` si vous n'aviez pas configuré votre serveur mariaDB avec le [row_format par défaut ou équivalent](mariadb.md#Étape-1--paramétrage-du-server-mariadb).
 
 **NOTE:** Selon la version d'hibernate utilisée et la version du serveur de données il peut être nécessaire de sélectionner un Dialect adéquat [voici où chercher](https://github.com/hibernate/hibernate-orm/tree/main/hibernate-core/src/main/java/org/hibernate/dialect) (Attention à sélectionner la bonne version en fonction du tag)
 

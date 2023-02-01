@@ -1,7 +1,7 @@
 # uPortal Roadmap
 
 Here we capture our uPortal community roadmap as it emerges for a given year. This roadmap extends beyond the uPortal core project.
-It includes the many sponsored sub-projects, such as portlets, web components and other supporting codebases.
+It includes the many sponsored sub-projects, such as portlets, web components and other supporting code bases.
 
 ## Roadmap Goal
 

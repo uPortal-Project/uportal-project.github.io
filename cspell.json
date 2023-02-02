@@ -22,6 +22,10 @@
             ]
         }
     ],
+    "flagWords": [
+        "adopter",
+        "adopters"
+    ],
     "words": [
         "Apereo",
         "appender",
@@ -35,6 +39,8 @@
         "Dartifact",
         "dbtest",
         "Ddir",
+        "deployer",
+        "deployers",
         "Dfile",
         "Dgenerate",
         "Dgroup",

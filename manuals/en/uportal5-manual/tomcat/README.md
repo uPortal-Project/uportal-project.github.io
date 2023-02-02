@@ -4,7 +4,7 @@
 
 Apache Tomcat is the recommended servlet container to use with uPortal. While uPortal requires a
 Servlet 3.0-compatible servlet container and another servlet container may be used, most uPortal
-implementers deploy to Apache Tomcat. Choosing Tomcat 8.x will likely allow uPortal adopters to get
+implementers deploy to Apache Tomcat. Choosing Tomcat 8.x will likely allow uPortal deployers to get
 the best advice from the community.
 
 See also

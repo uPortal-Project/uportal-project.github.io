@@ -148,7 +148,7 @@ $ docker push apereo/uportal-demo:latest
 ## Update Community
 For any non-snapshot release, email an announcement to [`uportal-dev`](https://groups.google.com/a/apereo.org/forum/#!forum/uportal-dev) and [`uportal-user`](https://groups.google.com/a/apereo.org/forum/#!forum/uportal-user).
   - Be sure to acknowledge those who contributed to the release.
-  - Be sure to put the release into context for existing adopters to understand.
+  - Be sure to put the release into context for existing deployers to understand.
 
 Have someone with access to the [uPortal Twitter account](https://twitter.com/uportal) announce the release.
 

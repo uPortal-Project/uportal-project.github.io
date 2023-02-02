@@ -1,4 +1,4 @@
-![uPortal logo](../en/images/uPortal-logo.jpg)
+![uPortal logo](../../../assets/images/uPortal-logo.jpg)
 
 [![build status](https://github.com/uPortal-Project/uPortal-start/workflows/CI/badge.svg?branch=master)](https://github.com/uPortal-Project/uPortal-start/actions)
 
@@ -17,15 +17,15 @@ uPortal-start va vous aider à gérer:
 
 :warning: Attention uPortal-start fourni des données dans `data/quickstart` ainsi qu'une configuration
 dans `etc/portal/` valable que pour un usage de démonstration, cette configuration n'est pas à utiliser
-en production sans vérification préalable (se référer aux [Fichiers de données (en)](../en/data/README.md)) .
+en production sans vérification préalable (se référer aux [Fichiers de données (en)](../../en/uportal5-manual/data/README.md)) .
 
 ## Sujets supplémentaires
 
 *   [Configuration de Base de Données](database/README.md)
 *   [Configuration de Tomcat](tomcat/README.md)
 *   [Intégrations](integrations/README.md)
-*   [Fichiers de données (en)](../en/data/README.md)
-*   [Ajouter un contenu dans uPortal-start (en)](../en/content/README.md)
+*   [Fichiers de données (en)](../../en/uportal5-manual/data/README.md)
+*   [Ajouter un contenu dans uPortal-start (en)](../../en/uportal5-manual/content/README.md)
 
 ### Prérequis
 

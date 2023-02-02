@@ -85,13 +85,13 @@ Les variables de `@color` 1-6 sont des valeurs personnalisables via la portlet d
 @color6
 ```
 
-![Dynamic Respondr Skin Portlet Page](../../../images/dynamic-respondr-skin.png)
+![Dynamic Respondr Skin Portlet Page](../../../../assets/images/dynamic-respondr-skin.png)
 
 ### Effets de Page
 
 La couleur de fond et l'image de fond du portail peuvent recevoir des effets spéciaux.
 Modifier `@portal-page-body-background-image-filter` permet toutes les combinaisons possible de [filtres css](https://developer.mozilla.org/en-US/docs/Web/CSS/filter) d'être appliqué.
 
-![Effet sans background](../../../images/background-filter-none.png)
+![Effet sans background](../../../../assets/images/background-filter-none.png)
 
-![Effet Sepia](../../../images/background-filter-sepia.png)
+![Effet Sepia](../../../../assets/images/background-filter-sepia.png)

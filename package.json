@@ -4,7 +4,7 @@
   "scripts": {
     "test:spellCheck": "cspell \"**/*.md\"",
     "test:lintMarkdown": "remark -f \"*.md\" \"{community,governance,manuals,reports}/**/*.md\"",
-    "test": "npm run test:spellCheck"
+    "test": "npm run test:spellCheck && npm run test:lintMarkdown"
   },
   "devDependencies": {
     "@cspell/dict-fr-fr": "~2.2.0",

@@ -10,7 +10,7 @@ We follow the Semantic Versioning as defined at <https://semver.org> for uPortal
 
 ### Major Releases
 
-Major releases are created every 3 to 5 years. We have determined that adopters do not have capacity for major releases
+Major releases are created every 3 to 5 years. We have determined that deployers do not have capacity for major releases
 more often than every couple of years, so we target about 3 years between major releases and as major features warrant.
 Major releases are defined by breaking changes that are not backyards compatible, thus takes more care to roll out.
 

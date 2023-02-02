@@ -57,7 +57,7 @@ The order of processing for these pipeline components is essentially _backwards_
 
 ## Using `RenderingPipelineBranchPoint` Beans
 
-uPortal adopters may configure the Rendering Pipeline to suit their needs.  Most common use cases
+uPortal deployers may configure the Rendering Pipeline to suit their needs.  Most common use cases
 can be satisfied using `RenderingPipelineBranchPoint` beans.  Rendering branch points are Java
 objects (Spring-managed beans) that tell some (or all) HTTP requests to follow a different path.
 Rendering branch points follow the standard uPortal 5 configuration strategy for Spring-managed

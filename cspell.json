@@ -39,6 +39,8 @@
         "Dartifact",
         "dbtest",
         "Ddir",
+        "deployer",
+        "deployers",
         "Dfile",
         "Dgenerate",
         "Dgroup",

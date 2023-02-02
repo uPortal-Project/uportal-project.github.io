@@ -10,12 +10,12 @@ A couple dozen people attended the events either in Arizona or Paris. Topics dis
 There are over 8 uPortal-related presentations submitted. We will also have round table discussions. Proposals will be reviewed soon. 
 
 ## Updates on uPortal Steering Committee priorities for 2019
-* Materials encouraging engagement  
+*   Materials encouraging engagement  
 The uPortal Winter Summit in Paris had a session on how easy it is to contribute.
-* Improved web presence  
-* Migrate usable content from wiki to Github  
-* Improve internationalization of documentation  
+*   Improved web presence  
+*   Migrate usable content from wiki to Github  
+*   Improve internationalization of documentation  
 ChristianC is modeling this for the card web component [in english](https://uportal-contrib.github.io/CardWebComponents/), [in french](https://uportal-contrib.github.io/CardWebComponents/index_fr), and [so on](https://github.com/uPortal-contrib/CardWebComponents#supported-languages).
-* Clarify maven release process  
-* Clarify uPortal Supporting Subscription program  
-* Establish a uPortal demo site  
+*   Clarify maven release process  
+*   Clarify uPortal Supporting Subscription program  
+*   Establish a uPortal demo site  

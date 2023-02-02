@@ -8,13 +8,13 @@ One of the goals is to run this pre-release of a component (`uPortal`, `Announce
 
 ## Prepare
 
-1. Clone uPortal and setup the jwt signatures in `etc/portal/uPortal.properties` and `etc/portal/notifications.properties`.  This allows the notifications API to be called.
-2. Run: `{uP-start}$ ./gradlew clean portalInit`.
-3. Configure test user generation with the `data.test.perf.*` configs in `build.properties`.
-4. Generate test users: `{uP-start}$ ./gradlew perfGenTestData`.
-5. Import the test users (Assuming you placed your perf user xml files in `data/perf`): `{uP-start}$ ./gradlew dataImport -Ddir="{uP-start}/data/perf"`.
-6. Start the portal: `{uP-start}$ ./gradlew tomcatStart`.
-7. Test a login from the generated population csv file.
+1.  Clone uPortal and setup the jwt signatures in `etc/portal/uPortal.properties` and `etc/portal/notifications.properties`.  This allows the notifications API to be called.
+2.  Run: `{uP-start}$ ./gradlew clean portalInit`.
+3.  Configure test user generation with the `data.test.perf.*` configs in `build.properties`.
+4.  Generate test users: `{uP-start}$ ./gradlew perfGenTestData`.
+5.  Import the test users (Assuming you placed your perf user xml files in `data/perf`): `{uP-start}$ ./gradlew dataImport -Ddir="{uP-start}/data/perf"`.
+6.  Start the portal: `{uP-start}$ ./gradlew tomcatStart`.
+7.  Test a login from the generated population csv file.
 
 ## Execute
 
@@ -35,21 +35,20 @@ $ ./gradlew jmRun
 
 Tests are run with a cache manager, but will clear the cache each iteration.
 
-1. Ramp up from 1 to `load.num.of.threads` users in `load.ramp.up` seconds
-2. All users perform the list of modules / actions below
-3. Between module requests, users will take a random length break (`delay.think.time.*`)
-4. At the end of the loop, users will take a random length break (`delay.final.think.time.*`)
-4. Test will run for each `load.loop.count` iterations or a duration of `scheduler.duration.seconds`
+1.  Ramp up from 1 to `load.num.of.threads` users in `load.ramp.up` seconds
+2.  All users perform the list of modules / actions below
+3.  Between module requests, users will take a random length break (`delay.think.time.*`)
+4.  At the end of the loop, users will take a random length break (`delay.final.think.time.*`)
+4.  Test will run for each `load.loop.count` iterations or a duration of `scheduler.duration.seconds`
 
 ### List of Baseline Modules
 
-* UI - Login
-* API - Gather AuthToken
-* API - People search
-* API - GET notifications
-* API - GET layout
-* UI - View Announcements
-* UI - View ESUP FM - Maximized
-  * UI - View ESUP FM - htmlFileTreeURL
-  * UI - View ESUP FM - fileChildrenURL
-
+*   UI - Login
+*   API - Gather AuthToken
+*   API - People search
+*   API - GET notifications
+*   API - GET layout
+*   UI - View Announcements
+*   UI - View ESUP FM - Maximized
+    *   UI - View ESUP FM - htmlFileTreeURL
+    *   UI - View ESUP FM - fileChildrenURL

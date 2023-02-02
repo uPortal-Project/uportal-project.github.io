@@ -83,7 +83,7 @@ hibernate.connection.validationQuery=select 1
 hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
 ```
 
-Vous devez copier/coller cette configuration pour chaque personnalisation d'accès à la base de données des contextes portlets / uPortal [cf configuration générale des bases de données](README.md#%C3%A9tape-5-configuration-sp%C3%A9cifique-portlet--uportal-optionnel)
+Vous devez copier/coller cette configuration pour chaque personnalisation d'accès à la base de données des contextes portlets / uPortal [cf configuration générale des bases de données](README.md#Étape-5-configuration-spécifique-portlet--uportal-optionnel)
 
 **NOTE:** Avant mariaDB 10.1.35 il fallait utiliser le dialect `org.apereo.portal.utils.MySQL5InnoDBCompressedDialect` si vous n'aviez pas configuré votre serveur mariaDB avec le [row_format par défaut ou équivalent](mariadb.md#Étape-1--paramétrage-du-server-mariadb).
 

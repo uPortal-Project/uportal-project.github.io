@@ -10,12 +10,12 @@ Jim Helwig, Chris Beach, Jonathan Tran, Laura McCord, Mary Elder, Benito Gonzale
 
 The [roadmap](../../roadmap.md) was reviewed and some updates were provided.
 
-* Favorites API: well into implementation
-* Java 11 support: uPortal compiles but there are some challenges with uPortal-start
+*   Favorites API: well into implementation
+*   Java 11 support: uPortal compiles but there are some challenges with uPortal-start
 
 ### Task Board Review
 
-* The [Playwright pull request](https://github.com/uPortal-Project/uPortal-start/pull/571) has been incorporated into uPortal-start.
+*   The [Playwright pull request](https://github.com/uPortal-Project/uPortal-start/pull/571) has been incorporated into uPortal-start.
 
 ### uPortal Developer Days
 

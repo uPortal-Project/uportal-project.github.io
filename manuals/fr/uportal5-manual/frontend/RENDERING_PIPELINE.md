@@ -57,7 +57,7 @@ L'ordre de traitement pour ces composants de pipeline est essentiellement _rétr
 ## Utiliser les Beans `RenderingPipelineBranchPoint`
 
 Les intégrateurs d'uPortal peuvent configurer le pipeline de rendu en fonction de leur besoin. La plupart des cas d'utilisation 
-peuvent être satisfaits en utilisant les Beans `RenderingPipelineBranchPoint`. les *Rendering branch points* sont des 
+peuvent être satisfaits en utilisant les Beans `RenderingPipelineBranchPoint`. les _Rendering branch points_ sont des 
 Object Java (Beans gérés par Spring) qui indiquent à quelques (ou toutes les) requêtes HTTP de suivre un chemin different. 
 Les _Rendering branch points_ (points de branchement de rendu) suivent la stratégie de configuration uPortal 5 standard pour des Beans gérés par Spring : 
 si vous fournissez un Bean correctement configuré du type correct (_viz._ 

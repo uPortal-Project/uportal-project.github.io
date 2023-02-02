@@ -42,4 +42,4 @@ MyPortletVersion=X.Y
 ## Customize the deployment
 
 You can customize the packages properties with the overlay system by providing a customized version of war files following the same path deployed file.
-As example you can customize log configurations, for that copy from the deployed path the logback.xml file and customize it !
+As example you can customize log configurations, for that copy from the deployed path the logback.xml file and customize it!

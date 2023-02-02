@@ -47,12 +47,12 @@ Integration     | Favorites API            |                                    
 Parity          | Java 11                  | Portlets upgraded to Spring 5      | uPortal upgraded to Spring 5 | Java 17
 
 ## Ongoing Tasks
-- Security Patches
-- Migrate / Maintain Docs
+-   Security Patches
+-   Migrate / Maintain Docs
 
 ## Future Tasks
-- Update Gradle to latest version
-- Remove JAXB
-- Add more APIs
-- Revamp marketing site
-- Standardize JS Libraries
+-   Update Gradle to latest version
+-   Remove JAXB
+-   Add more APIs
+-   Revamp marketing site
+-   Standardize JS Libraries

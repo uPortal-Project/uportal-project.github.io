@@ -8,8 +8,8 @@ Jim Helwig, Chris Beach, Jonathan Tran, Julien Gribonvald, Benito Gonzalez
 
 ### Task board updates
 
-* Got an update from Chris Beach regarding Playwright and Artillery to do functional and load testing, respectively.
-* Reviewed and moved things around as necessary
+*   Got an update from Chris Beach regarding Playwright and Artillery to do functional and load testing, respectively.
+*   Reviewed and moved things around as necessary
 
 ### Open Apereo 2022
 

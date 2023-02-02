@@ -3,8 +3,8 @@
 This section of the documentation covers details of the data files
 used to configure uPortal.
 
-* [Lock Down User Layouts](lockdown-layouts.md)
-* [Session Timeout by Group](timeout.md)
+*   [Lock Down User Layouts](lockdown-layouts.md)
+*   [Session Timeout by Group](timeout.md)
 
 :warning: Please don't consider files under `data/quickstart` as production ready,
 these files provides a quickstart ready only and are only for a demo use.

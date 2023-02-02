@@ -6,7 +6,7 @@ uPortal est configuré pour utiliser une base de données HSQL par défaut.
 
 uPortal prend en charge un certain nombre de bases de données de production populaires et vous pouvez configurer la base de données en suivant les exemples publiés sous Configuration de la base de données de production.
 
-## Étape 1 : Configurer la version du pilote de base de données      
+## Étape 1 : Configurer la version du pilote de base de données
 
 Après avoir déterminé les coordonnées Maven du pilote, ouvrez le fichier `gradle.properties` et ajoutez les coordonnées de version du pilote en tant que valeur de propriété.
 
@@ -90,11 +90,11 @@ Remarque: Aussi ces fichiers peuvent être utilisés pour définir d'autres prop
 
 Sélectionner la base de données ci-dessous pour des notes et des exemples de configuration.
 
-+ [DB2](db2.md)
-+ [Hypersonic](hypersonic.md)
-+ [Microsoft SQL Server](ms-sqlserver.md)
-+ [MySQL](mysql.md)
-+ [MariaDB](mariadb.md)
-+ [Oracle RDBMS](oracle.md)
-+ [PostgreSQL](postgresql.md)
-+ [Sybase](sybase.md)
++   [DB2](db2.md)
++   [Hypersonic](hypersonic.md)
++   [Microsoft SQL Server](ms-sqlserver.md)
++   [MySQL](mysql.md)
++   [MariaDB](mariadb.md)
++   [Oracle RDBMS](oracle.md)
++   [PostgreSQL](postgresql.md)
++   [Sybase](sybase.md)

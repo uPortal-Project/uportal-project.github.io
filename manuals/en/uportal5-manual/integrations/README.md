@@ -17,15 +17,15 @@ times the changes are in conflict with the community code.
 
 ### Steps to Create a Custom Module
 
-1. Create a `custom` directory in your repo, if it does not exist
-2. Create a subdirectory that will also represent the name of your
+1.  Create a `custom` directory in your repo, if it does not exist
+2.  Create a subdirectory that will also represent the name of your
 custom module. If this code is associated with a portlet or uPortal
 module, prefix your shortname. For example, to customize a class in
 `uPortal-persondir`, rename it to `<shortname>-persondir`. Another
 example is to customize CalendarPortlet, name it `<shortname>-calendar`.
-3. Create a `src` directory in the subdirectory
-4. Copy source files in this directory as appropriate
-5. Create a `build.gradle` file in the subdirectory, following the
+3.  Create a `src` directory in the subdirectory
+4.  Copy source files in this directory as appropriate
+5.  Create a `build.gradle` file in the subdirectory, following the
 below pattern:
 
 ```gradle
@@ -66,9 +66,9 @@ dependencies {
     compileOnly "${servletApiDependency}"
 }
 ```
-6. Add module to `settings.gradle` in root of repo. The entry will
+6.  Add module to `settings.gradle` in root of repo. The entry will
 be `include 'custom:<subdirectory>'` similar to the other modules.
-7. Add the module to `overlays/uPortal/build.gradle` or the appropriate
+7.  Add the module to `overlays/uPortal/build.gradle` or the appropriate
 portlet, as needed. The entry will be a compile dependency like 
 `compile project(':custom:<subdirectory>')` in a `dependencies` block.
 

@@ -8,8 +8,8 @@ Jim Helwig, Christian Cousquer, Jonathan Tran, Toben Archer, Benito Gonzalez, an
 
 The steering committee discussed community meeting/workshops for Open Apereo 21. The meetings/workshops include:
 
-* Roadmap (meeting)
-* First contribution workshop
+*   Roadmap (meeting)
+*   First contribution workshop
 
 ## uPSC task tracking
 

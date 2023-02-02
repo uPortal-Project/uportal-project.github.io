@@ -114,6 +114,6 @@ ant clean initportal
 
  
 
-##  Problèmes et bogues connus
+## Problèmes et bogues connus
 
 Certaines personnes ont rencontré des problèmes avec les pilotes de base de données avec certains environnements d'application Web si le fichier zip des classes est utilisé tel quel avec l'extension de fichier `.zip`. Le simple fait de renommer le fichier dans un fichier `.jar` semble résoudre le problème. Alternativement, décompresser le fichier de classes dans une structure de répertoire, puis utiliser la commande jar pour reconditionner les classes dans un fichier jar fonctionne également.

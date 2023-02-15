@@ -55,5 +55,5 @@ Parity          | Java 11 - DONE                     | Portlets upgraded to Spri
 - Remove JAXB
 - Add more APIs
 - Revamp marketing site
-- Standardize JS Libraries:w
+- Standardize JS Libraries
 -

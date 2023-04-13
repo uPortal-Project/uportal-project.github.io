@@ -12,7 +12,7 @@ needed files in your environment, if you are not able to upgrade.
 
 ## GA4 Files
 
-Gooogle Analytics 4, like Google Universal Analytics, is implemented in two files within the
+Google Analytics 4, like Google Universal Analytics, is implemented in two files within the
 uPortal Google Analytics Portlet.
 
 - init.jsp
@@ -26,7 +26,7 @@ Within the community version of uPortal, these files are located within the uPor
 To use these files without using the uPortal community version but within uportal-start, put these
 two files in the overlays folder
 
-- overlays/uPortal/src/main/weebap/WEB-INF/jsp/GoogleAnalytics/init.jsp
+- overlays/uPortal/src/main/webapp/WEB-INF/jsp/GoogleAnalytics/init.jsp
 - overlays/uPortal/src/main/webapp/media/skins/common/javascript/uportal/up-ga.js
 
 ### init.jsp
@@ -39,9 +39,10 @@ environment.  This file serves the same function in both Google Universal Analyt
 Analytics 4, although the implementation is different.
 
 ### up-ga.js
-up-ga.js is responsible foor sending the needed pageview, link click,  and timing events to Gooogle Analytics
+
+up-ga.js is responsible for sending the needed page view, link click,  and timing events to Google Analytics
 as the page is rendered and as events within the page are executed.  This file serves the same function
-in both Google Univesal Analytics and Google Analytics 4, although the implementation is different.
+in both Google Universal Analytics and Google Analytics 4, although the implementation is different.
 
 ## Comparison
 
@@ -50,22 +51,22 @@ that it makes, when compared to Google Universal Analytics.
 
 uPortal using Google Universal Analytics uses up-ga.js to create a tracker with basically default values
 (after including the tracker id), and this sends the initial page view.  After that, up-ga.js populates
-the tracker's configuration with custom imformation regarding the type of information, either pageview
+the tracker's configuration with custom information regarding the type of information, either page view
 or timing and then sends the event with a ga("event") call.  All of the data that is included comes from
 the tracker's configuration at that time.
 
-uPortal using Gooogle Analytics 4 also uses up-ga.js to create a tracker with basically default values.  However,
-this initial event is supressed.  All events are sent explicitly.  The data needed for the event are included
+uPortal using Google Analytics 4 also uses up-ga.js to create a tracker with basically default values.  However,
+this initial event is suppressed.  All events are sent explicitly.  The data needed for the event are included
 explicitly within the up.gtag("event") call with the needed data as part of the event body.  The intent is for
 the event to be immutable.
 
 The overall structure of the updated up-ga.js script is similar to the original script with several exceptions:
 
-- Several functions return values that willl be included in the up.gtag("event") body, rather than put directly
+- Several functions return values that will be included in the up.gtag("event") body, rather than put directly
 into the configuration of the ga("event")
-- Due to dependencies, some functions have beeen reordered.
+- Due to dependencies, some functions have been reordered.
 - The up.gtag javascript object contains the needed code for executing the needed events, whereas the original script
-did not neeed to be added too the up structure.  At the time, this was required to have visibility into the Google
+did not need to be added to the up structure.  At the time, this was required to have visibility into the Google
 Analytics 4 functions.  This could be revisited if the current implementation has issues.
 - Google Universal Analytics sends individual events.  GA4 collects events and sends them in batch, approximately event
 10 seconds.

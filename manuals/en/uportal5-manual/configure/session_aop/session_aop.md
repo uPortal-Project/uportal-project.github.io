@@ -1,8 +1,8 @@
 # Session Replication AOP
 
 In order for Apache Tomcat to successfully perform session replication, it is necessary
-that all classses stored in the session are serializable.  If the class is not serializable,
-the class cannot be successfuly stored in the session and reconstituted on the other
+that all classes stored in the session are serializable.  If the class is not serializable,
+the class cannot be successfully stored in the session and reconstituted on the other
 tomcat servers.
 
 However, uPortal does not verify if a class being stored in a session is in fact serializable
@@ -31,7 +31,7 @@ The process that occurs as part of tomcatConfig is as follows:
 1. if "deploySessionReplicationAop" is true, run the gradlew task deployAopArchives.  This task is contained in
 the file gradle/tasks/aop.gradle
 1. deployAopArchives runs several tasks:
-	- download dependdencies - we need an AspectJ jar to be available for tomcat
+	- download dependencies - we need an AspectJ jar to be available for tomcat
 	- build the AOP jar - we need to compile a java AspectJ class HttpSessionAspect, and we need to
 	weave AspectJ commands into the Tomcat class that implements HttpSession.
 	- build the Catalina AOP Jar - we need to remove the class that implements HttpSession from 
@@ -54,7 +54,7 @@ If you look at the code, you can see on line 42
     @Before("execution(* javax.servlet.http.HttpSession+.setAttribute(..))")
 ```
 
-This block says the HttpSessionAspeect class will be called before a class that implements HttpSession and executes
+This block says the HttpSessionAspect class will be called before a class that implements HttpSession and executes
 the setAttribute method.
 
 The rest of the code is for logging any needed information.

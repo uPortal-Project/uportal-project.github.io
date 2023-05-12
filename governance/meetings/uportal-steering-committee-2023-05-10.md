@@ -13,7 +13,7 @@ The nomination period for the **[Apereo Dolphin Awards and Fellowships](https://
 ### FOSSY 2023
 
 The **[Free and Open Source Yearly (FOSSY) conference](https://2023.fossy.us)** will be taking place 13 to 16 of July in Portland, OR.
-There will be some uPortal presentations at this inaugural conference. Watch this space to see the uPortal topics that will be presented.
+In the "FOSS For Education" community track there will be some uPortal presentations at this inaugural conference. Watch this space to see the uPortal topics that will be presented.
 
 ### uPortal Call for Developers and (Implementing) Institutions
 

@@ -4,7 +4,7 @@
 
 ## Writing a new Aggregator
 
-PortalRawEventsAggregatorImpl is the driver behind the aggregation processs for Raw Events.  The method doAggregateRawEvents handles transaction management and calls doAggregationRawEventsInternal.  doAggregationRawEventsInternal is the method that iterates over all of the newly processed events.
+PortalRawEventsAggregatorImpl is the driver behind the aggregation process for Raw Events.  The method doAggregateRawEvents handles transaction management and calls doAggregationRawEventsInternal.  doAggregationRawEventsInternal is the method that iterates over all of the newly processed events.
 
 Events are selected within the portalEventDao.aggregatePortalEvents() call, which passes in a AggregateEventsHandler lambda to be called for each event.  portalEventDao refers to an interface IPortalEventDao, which is implemented as a bean by JpaPortalEventStore.  This class finds all of the events to process and iterates over each event,
 passing the AggregateEventsHandler as a parameter.
@@ -18,7 +18,7 @@ AggregateEventsHandler is a lambda, and its magic occurs in the apply() method. 
 
 ### SimplePortalEventAggregator
 
-This is a simple aggregator, as it does not care about time interval bnoundary crossings by default.  It simply executes the class's aggregateEvent method over the event.  This logic can be as simple or as complicated as defined.  The simplest implementation is the org.apereo.portal.events.aggr.LoggingPortalEventAggregator, which simply writes to the log when an event is processed.  There is no additional filtering or logic.
+This is a simple aggregator, as it does not care about time interval boundary crossings by default.  It simply executes the class's aggregateEvent method over the event.  This logic can be as simple or as complicated as defined.  The simplest implementation is the org.apereo.portal.events.aggr.LoggingPortalEventAggregator, which simply writes to the log when an event is processed.  There is no additional filtering or logic.
 
 A slightly more complicated simple aggregator is org.apereo.portal.events.aggr.analytics.AnalyticsEventAggregator.  This aggregator simply grabs the data structure for the event and writes it to its own table UP_ANALYTICS_EVENTS, managed by class org.apereo.portal.events.handlers.db.PersistentAnalyticsEvent.
 

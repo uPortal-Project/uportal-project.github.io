@@ -18,9 +18,9 @@ AggregateEventsHandler is a lambda, and its magic occurs in the apply() method. 
 
 ### SimplePortalEventAggregator
 
-This is a simple aggregator, as it does not care about time interval boundary crossings by default.  It simply executes the class's aggregateEvent method over the event.  This logic can be as simple or as complicated as defined.  The simplest implementation is the org.apereo.portal.events.aggr.LoggingPortalEventAggregator, which simply writes to the log when an event is processed.  There is no additional filtering or logic.
+This is a simple aggregator, as it does not care about time interval boundary crossings by default. It simply executes the class's aggregateEvent method over the event. This logic can be as simple or as complicated as defined. The simplest implementation is the `org.apereo.portal.events.aggr.LoggingPortalEventAggregator`, which simply writes to the log when an event is processed. There is no additional filtering or logic.
 
-A slightly more complicated simple aggregator is org.apereo.portal.events.aggr.analytics.AnalyticsEventAggregator.  This aggregator simply grabs the data structure for the event and writes it to its own table UP_ANALYTICS_EVENTS, managed by class org.apereo.portal.events.handlers.db.PersistentAnalyticsEvent.
+A slightly more complicated simple aggregator is `org.apereo.portal.events.aggr.analytics.AnalyticsEventAggregator`. This aggregator simply grabs the data structure for the event and writes it to its own table `UP_ANALYTICS_EVENTS`, managed by class `org.apereo.portal.events.handlers.db.PersistentAnalyticsEvent`.
 
 ### IntervalAwarePortalEventAggregator
 

@@ -6,7 +6,7 @@
 
 `PortalRawEventsAggregatorImpl` is the driver behind the aggregation process for Raw Events.  The method `doAggregateRawEvents` handles transaction management and calls `doAggregationRawEventsInternal`. `doAggregationRawEventsInternal` is the method that iterates over all of the newly processed events.
 
-Events are selected within the portalEventDao.aggregatePortalEvents() call, which passes in a AggregateEventsHandler lambda to be called for each event.  portalEventDao refers to an interface IPortalEventDao, which is implemented as a bean by JpaPortalEventStore.  This class finds all of the events to process and iterates over each event,
+Events are selected within the `portalEventDao.aggregatePortalEvents()` call, which passes in a `AggregateEventsHandler` lambda to be called for each event. `portalEventDao` refers to an interface `IPortalEventDao`, which is implemented as a bean by `JpaPortalEventStore`.  This class finds all of the events to process and iterates over each event,
 passing the AggregateEventsHandler as a parameter.
 
 AggregateEventsHandler is defined within PortalRawEventsAggregateImpl as an internal class.  Its job is to identify all of the aggregates that are defined and call each of them for every record.  In the default uPortal-start environment, there are several aggregators that are called for each event.

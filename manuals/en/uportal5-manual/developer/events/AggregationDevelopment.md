@@ -26,6 +26,5 @@ A slightly more complicated simple aggregator is `org.apereo.portal.events.aggr.
 
 Classes that implement this interface are the main reason for the aggregator.  They are designed to group events into a single record, which is then persistent into another UP Aggregation table.  Much configuration is provided for free by the PortalRawEventsAggregatorImpl class.  Things like transaction management and time boundaries are automatically handled.  One significant example that implements this interface is org.apereo.portal.events.aggr.portletexec.PortletExecutionAggregator.
 
-Refer to https://apereo.atlassian.net/wiki/spaces/UPM41/pages/103942255/Event+Logging for additional information.
-
+Refer to <https://apereo.atlassian.net/wiki/spaces/UPM41/pages/103942255/Event+Logging> for additional information.
 

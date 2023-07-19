@@ -9,9 +9,9 @@ the best advice from the community.
 
 See also
 
-+ [Fronting Tomcat with httpd](fronting-with-httpd.md)
-+ [Using SSL](ssl-configuration.md)
-+ [Debugging with JPDA](ssl-configuration.md)
++   [Fronting Tomcat with httpd](fronting-with-httpd.md)
++   [Using SSL](ssl-configuration.md)
++   [Debugging with JPDA](ssl-configuration.md)
 
 ## Linux/Unix Installation
 
@@ -192,8 +192,8 @@ Tomcat's default is 30 minutes.
 
 #### JVM settings
 
-+ [Example JVM settings](https://wiki.jasig.org/display/UPC/JVM+Configurations)
-+ [Heap tuning](https://wiki.jasig.org/display/UPC/uPortal+Heap+Tuning)
++   [Example JVM settings](https://wiki.jasig.org/display/UPC/JVM+Configurations)
++   [Heap tuning](https://wiki.jasig.org/display/UPC/uPortal+Heap+Tuning)
 
 #### Disabling SSLv3
 
@@ -213,7 +213,7 @@ Your CAS server must be configured to use one of the mentioned protocols or the 
 
 If you run into troubles:
 
-+ [Diagnosing TLS, SSL, and HTTPS](https://blogs.oracle.com/java-platform-group/entry/diagnosing_tls_ssl_and_https)
++   [Diagnosing TLS, SSL, and HTTPS](https://blogs.oracle.com/java-platform-group/entry/diagnosing_tls_ssl_and_https)
 
 [Tomcat configuration page]: http://tomcat.apache.org/tomcat-7.0-doc/config/http.html
 [faster Tomcat startup wiki page]: http://wiki.apache.org/tomcat/HowTo/FasterStartUp

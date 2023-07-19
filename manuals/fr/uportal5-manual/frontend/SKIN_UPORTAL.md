@@ -10,11 +10,11 @@
 
 ## Créer une Skin
 
-1. Commencer par le dossier racine du code source uPortal
-2. Accéder au dossier *uportal-war/src/main/webapp/media/skins*
-3. Copier le dossier *defaultSkin/* et attribuez-lui un nom spécifique à votre institution (par exemple *wolverine/*)
-4. Copier le fichier *defaultSkin.less* et attribuez-lui le même nom (par exemple, *wolverine.less*)
-5. Modifier les imports dans le fichier de Skin pour pointer vers le dossier de skin. par exemple. *wolverine.less*
+1.  Commencer par le dossier racine du code source uPortal
+2.  Accéder au dossier *uportal-war/src/main/webapp/media/skins*
+3.  Copier le dossier *defaultSkin/* et attribuez-lui un nom spécifique à votre institution (par exemple *wolverine/*)
+4.  Copier le fichier *defaultSkin.less* et attribuez-lui le même nom (par exemple, *wolverine.less*)
+5.  Modifier les imports dans le fichier de Skin pour pointer vers le dossier de skin. par exemple. *wolverine.less*
 
     ``` less
     /** DO NOT REMOVE OR ALTER THESE INCLUDES **/
@@ -26,8 +26,8 @@
     @import "wolverine/less/skin.less";
     ```
 
-6. Accéder au dossier *uportal-war/src/main/webapp/media/skins/respondr*
-7. Éditer *skinList.xml* pour pointer les noms `<skin-name>` et `<skin-key>` vers le nouveau nom de skin. Par exemple.
+6.  Accéder au dossier *uportal-war/src/main/webapp/media/skins/respondr*
+7.  Éditer *skinList.xml* pour pointer les noms `<skin-name>` et `<skin-key>` vers le nouveau nom de skin. Par exemple.
 
     ``` xml
     <skin>
@@ -76,7 +76,7 @@ Des Changements peuvent être fait pour surcharger les [variables Bootstrap](/up
 
 Les variables de `@color` 1-6 sont des valeurs personnalisables via la portlet dynamic respondr skin.
 
-``` less
+```less
 @color1
 @color2
 @color3
@@ -85,13 +85,13 @@ Les variables de `@color` 1-6 sont des valeurs personnalisables via la portlet d
 @color6
 ```
 
-![Dynamic Respondr Skin Portlet Page](../../../images/dynamic-respondr-skin.png)
+![Dynamic Respondr Skin Portlet Page](../../../../assets/images/dynamic-respondr-skin.png)
 
 ### Effets de Page
 
 La couleur de fond et l'image de fond du portail peuvent recevoir des effets spéciaux.
 Modifier `@portal-page-body-background-image-filter` permet toutes les combinaisons possible de [filtres css](https://developer.mozilla.org/en-US/docs/Web/CSS/filter) d'être appliqué.
 
-![Effet sans background](../../../images/background-filter-none.png)
+![Effet sans background](../../../../assets/images/background-filter-none.png)
 
-![Effet Sepia](../../../images/background-filter-sepia.png)
+![Effet Sepia](../../../../assets/images/background-filter-sepia.png)

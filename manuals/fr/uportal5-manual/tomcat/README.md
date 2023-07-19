@@ -7,8 +7,8 @@ aux utilisateurs d'obtenir les meilleurs conseils de la communauté.
 
 Voir aussi
 
-+ [Mettre Httpd en front de Tomcat](fronting-with-httpd.md)
-+ [Utiliser SSL](ssl-configuration.md)
++   [Mettre Httpd en front de Tomcat](fronting-with-httpd.md)
++   [Utiliser SSL](ssl-configuration.md)
 
 ## Installation Linux/Unix 
 
@@ -123,7 +123,7 @@ Pour activer cette fonctionnalité pour Tomcat 7 ou 8, ajoutez `sessionCookiePat
 
 ### Augmenter la taille du cache de ressources
 
-uPortal et la collection typique de ses portlets prennent beaucoup de place. Tomcat 8.5 émet des avertissements sur l'épuisement de l'espace de cache des ressources. Ajoutez la configuration de cache suivante juste avant la _fermeture_ du nœud `Context`.
+uPortal et la collection typique de ses portlets prennent beaucoup de place. Tomcat 8.5 émet des avertissements sur l'épuisement de l'espace de cache des ressources. Ajoutez la configuration de cache suivante juste avant la *fermeture* du nœud `Context`.
 
 ```xml
 <Resources cachingAllowed="true" cacheMaxSize="100000" />
@@ -190,8 +190,8 @@ La valeur par défaut de Tomcat est de 30 minutes.
 
 #### paramétrages JVM
 
-+ [Exemple de paramétrage JVM](https://wiki.jasig.org/display/UPC/JVM+Configurations)
-+ [Heap tuning](https://wiki.jasig.org/display/UPC/uPortal+Heap+Tuning)
++   [Exemple de paramétrage JVM](https://wiki.jasig.org/display/UPC/JVM+Configurations)
++   [Heap tuning](https://wiki.jasig.org/display/UPC/uPortal+Heap+Tuning)
 
 #### Désactiver SSLv3
 
@@ -210,7 +210,7 @@ Votre serveur CAS doit être configuré pour utiliser l'un des protocoles mentio
 
 Si vous rencontrez des problèmes :
 
-+ [Diagnostiquer TLS, SSL, et HTTPS](https://blogs.oracle.com/java-platform-group/entry/diagnosing_tls_ssl_and_https)
++   [Diagnostiquer TLS, SSL, et HTTPS](https://blogs.oracle.com/java-platform-group/entry/diagnosing_tls_ssl_and_https)
 
 [page de configuration Tomcat]: http://tomcat.apache.org/tomcat-7.0-doc/config/http.html
 [faster Tomcat startup wiki page]: http://wiki.apache.org/tomcat/HowTo/FasterStartUp

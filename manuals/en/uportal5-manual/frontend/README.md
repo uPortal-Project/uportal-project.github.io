@@ -3,6 +3,6 @@ uPortal offers a flexible ability to customize the look and feel of the user exp
 
 ## Topics
 
-* [Skinning uPortal](SKINNING_UPORTAL.md)
-* [Configuring the uPortal Rendering Pipeline](RENDERING_PIPELINE.md)
-* [Using Angular](USING_ANGULAR.md)
+*   [Skinning uPortal](SKINNING_UPORTAL.md)
+*   [Configuring the uPortal Rendering Pipeline](RENDERING_PIPELINE.md)
+*   [Using Angular](USING_ANGULAR.md)

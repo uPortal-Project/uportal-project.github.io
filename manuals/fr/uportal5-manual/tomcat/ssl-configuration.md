@@ -4,8 +4,8 @@ Le document suivant suppose que votre machine virtuelle Java a déjà été inst
 
 Les commandes concernant la création du fichier de clés de certificat font référence à l'utilitaire `keytool` fourni avec Oracle JDK.
 
-+ [Keytool documentation for Windows](http://download.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html)
-+ [Keytool documentation for Solaris/Linux](http://download.oracle.com/javase/6/docs/technotes/tools/solaris/keytool.html)
++   [Keytool documentation for Windows](http://download.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html)
++   [Keytool documentation for Solaris/Linux](http://download.oracle.com/javase/6/docs/technotes/tools/solaris/keytool.html)
 
 ## Étape 1: Créer un fichier de clés de certificat
 
@@ -15,16 +15,16 @@ Un fichier de clés de certificat est un fichier unique contenant des clés priv
 $JAVA_HOME/bin/keytool -genkey -alias tomcat -keyalg RSA
 ```
 
-+ Vous serez invité à entrer le "mot de passe du keystore" qui a la valeur par défaut `changeit`.
-+ Les prochaines invites de commandes seront utilisées pour générer un certificat auto-signé pour votre nouvelle clé privée. Si vous êtes familier avec openssl, les champs vous sont présentés dans l'ordre inverse:
-+ Quel est votre nom et prénom? (Cela correspond à CN et doit correspondre au nom de domaine que vos clients utiliseront pour accéder à votre instance uPortal. Exemple : <strong>your-host.university.edu</strong>)
-+ Quel est le nom de votre unité organisationnelle? (OU, Exemple : <strong>Direction des systèmes d'information </strong>)
-+ Quel est le nom de votre organisation? (O, Exemple : <strong>Université de quelque-part </strong>)
-+ Quel est le nom de votre ville ou localité? (L, Exemple : <strong>Quelque part</strong>)
-+ Quel est le nom de votre état ou province? (ST, exemple : <strong>Toulouse</strong>)
-+ Quel est le code de pays à deux lettres pour cette unité? (C, Exemple : <strong>FR</strong>)
-+ Il vous sera demandé de confirmer vos choix, tapez `yes` et appuyez sur Entrée pour accepter.
-+ `Entrer le mot de passe pour &lt;tomcat &gt;` est la question suivante, NE taper PAS un mot de passe différent de celui de votre keystore. Tomcat ne prend pas en charge les clés dans les fichiers de clés qui ont des valeurs de mot de passe différentes de celles du fichier de clés lui-même. Appuyez simplement sur Entrée pour continuer.
++   Vous serez invité à entrer le "mot de passe du keystore" qui a la valeur par défaut `changeit`.
++   Les prochaines invites de commandes seront utilisées pour générer un certificat auto-signé pour votre nouvelle clé privée. Si vous êtes familier avec openssl, les champs vous sont présentés dans l'ordre inverse:
++   Quel est votre nom et prénom? (Cela correspond à CN et doit correspondre au nom de domaine que vos clients utiliseront pour accéder à votre instance uPortal. Exemple : <strong>your-host.university.edu</strong>)
++   Quel est le nom de votre unité organisationnelle? (OU, Exemple : <strong>Direction des systèmes d'information </strong>)
++   Quel est le nom de votre organisation? (O, Exemple : <strong>Université de quelque-part </strong>)
++   Quel est le nom de votre ville ou localité? (L, Exemple : <strong>Quelque part</strong>)
++   Quel est le nom de votre état ou province? (ST, exemple : <strong>Toulouse</strong>)
++   Quel est le code de pays à deux lettres pour cette unité? (C, Exemple : <strong>FR</strong>)
++   Il vous sera demandé de confirmer vos choix, tapez `yes` et appuyez sur Entrée pour accepter.
++   `Entrer le mot de passe pour &lt;tomcat &gt;` est la question suivante, NE taper PAS un mot de passe différent de celui de votre keystore. Tomcat ne prend pas en charge les clés dans les fichiers de clés qui ont des valeurs de mot de passe différentes de celles du fichier de clés lui-même. Appuyez simplement sur Entrée pour continuer.
 
 Votre fichier de clés `cacerts` contient maintenant une clé privée et un certificat auto-signé. Les fichiers `cacerts` peuvent être trouvés dans votre installation JVM sur le chemin:
 
@@ -111,6 +111,6 @@ Vous devriez voir l'autorité de certification dans la chaîne de certificats.
 
 ## Références supplémentaires
 
-+ [Tomcat SSL How-To](http://tomcat.apache.org/tomcat-7.0-doc/ssl-howto.html)
-+ [Apache httpd SSL documentation](http://httpd.apache.org/docs/2.2/ssl/)
-+ [Apache httpd SSL FAQ](http://httpd.apache.org/docs/2.2/ssl/ssl_faq.html)
++   [Tomcat SSL How-To](http://tomcat.apache.org/tomcat-7.0-doc/ssl-howto.html)
++   [Apache httpd SSL documentation](http://httpd.apache.org/docs/2.2/ssl/)
++   [Apache httpd SSL FAQ](http://httpd.apache.org/docs/2.2/ssl/ssl_faq.html)

@@ -8,11 +8,11 @@ Starting with uPortal 5.14.x, five HTTP Header Security Filters can be configure
 
 The following security headers that are available to be enabled/disabled include:
 
-* X-Frame-Options (antiClickJacking)
-* Content-Security-Policy
-* Strict-Transport-Protocol
-* X-Content-Type-Option
-* Referrer-Policy
+*   X-Frame-Options (antiClickJacking)
+*   Content-Security-Policy
+*   Strict-Transport-Protocol
+*   X-Content-Type-Option
+*   Referrer-Policy
 
 ## Where to Configure
 
@@ -30,9 +30,9 @@ Also known as antiClickJacking (https://tomcat.apache.org/tomcat-11.0-doc/config
 
 The following antiClickJacking configurations are included in uPortal, and mimic the configuration options that are also available directly through the tomcat server config file.
 
-* `antiClickJackingEnabled`
-* `antiClickJackingOptions`
-* `antiClickJackingUri`
+*   `antiClickJackingEnabled`
+*   `antiClickJackingOptions`
+*   `antiClickJackingUri`
 
 Locate the code block below and enable this feature by replacing "false" with "true". The antiClickJackingOptions available are `deny`, `sameorigin`, or `allow-from`. If you select `allow-from`, setup the URI for the `antiClickJackingUri` property. Learn more about which options are best suited for your needs at https://tomcat.apache.org/tomcat-11.0-doc/config/filter.html
 

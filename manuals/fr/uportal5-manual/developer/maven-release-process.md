@@ -4,14 +4,14 @@
 
 There are 3 prerequisites to cutting maven releases:
 
-1. [JIRA Account at Sonatype](https://issues.sonatype.org/secure/Signup!default.jspa)
-2. Permissions at Sonatype to release projects
-    - This is granted via a Jira ticket from a uPortal committer
-3. [Set up public PGP key on a server](https://central.sonatype.org/pages/working-with-pgp-signatures.html)
-    - Generate a key pair `gpg2 --gen-key`
-    - If you choose to have an expiration date, edit the key via `gpg2 --edit-key {key ID}`
-    - Determine the key ID and keyring file `gpg2 --list-keys` (the key ID is the `pub` ID)
-    - Distribute your public key `gpg2 --keyserver hkp://pool.sks-keyservers.net --send-keys {key ID}`
+1.  [JIRA Account at Sonatype](https://issues.sonatype.org/secure/Signup!default.jspa)
+2.  Permissions at Sonatype to release projects
+    -   This is granted via a Jira ticket from a uPortal committer
+3.  [Set up public PGP key on a server](https://central.sonatype.org/pages/working-with-pgp-signatures.html)
+    -   Generate a key pair `gpg2 --gen-key`
+    -   If you choose to have an expiration date, edit the key via `gpg2 --edit-key {key ID}`
+    -   Determine the key ID and keyring file `gpg2 --list-keys` (the key ID is the `pub` ID)
+    -   Distribute your public key `gpg2 --keyserver hkp://pool.sks-keyservers.net --send-keys {key ID}`
 
 ## Setup
 
@@ -80,10 +80,10 @@ $ ./gradlew clean portalInit
 
 ### Verify
 
-* Unit tests are automatically run on commits, so ensure the latest commit's CI build passed.
-* FUTURE - Need to run the cross browser platform tests and the performance tests
-* Smoke test the UI manually of the component
-  * Pay attention to new changes
+*   Unit tests are automatically run on commits, so ensure the latest commit's CI build passed.
+*   FUTURE - Need to run the cross browser platform tests and the performance tests
+*   Smoke test the UI manually of the component
+    *   Pay attention to new changes
 
 ## Cut Release
 
@@ -100,22 +100,22 @@ $ mvn release:clean release:prepare release:perform
 ## Close and Release from Nexus Staging Repository
 
 Close the release in Sonatype to ensure the pushed Maven artifacts pass checks:
-1. Log into <https://oss.sonatype.org>
-2. Search among `Build Promotion` > `Staging Repositories` for your username
-3. Review the release for the expected artifacts
-4. Select the uPortal artifact you staged and hit "Close"
-  - The lifecycle is `Open --> Closed --> Released`
-5. Wait a few minutes for the component's artifact to close
-6. Release the artifact, and put the tag name in the description
-  - Leave 'Automatically Drop' checked.
+1.  Log into <https://oss.sonatype.org>
+2.  Search among `Build Promotion` > `Staging Repositories` for your username
+3.  Review the release for the expected artifacts
+4.  Select the uPortal artifact you staged and hit "Close"
+    -   The lifecycle is `Open --> Closed --> Released`
+5.  Wait a few minutes for the component's artifact to close
+6.  Release the artifact, and put the tag name in the description
+    -   Leave 'Automatically Drop' checked.
 
 ## Create Release Notes
 
-1. Use Git to inspect the incremental commits since the last release (e.g. `$ git log v3.5.0..3.5.1 --no-merges`)
-2. Review the issue tracker and confirm that the referenced issues have been Resolved
-3. Enter the release notes on the GitHub releases page in the component's repo
-  - It's helpful to use the previous release notes as a guide
-  - Each commit type goes into a sub section with the type as a header (Fixes, Chores, Features, etc...).
+1.  Use Git to inspect the incremental commits since the last release (e.g. `$ git log v3.5.0..3.5.1 --no-merges`)
+2.  Review the issue tracker and confirm that the referenced issues have been Resolved
+3.  Enter the release notes on the GitHub releases page in the component's repo
+    -   It's helpful to use the previous release notes as a guide
+    -   Each commit type goes into a sub section with the type as a header (Fixes, Chores, Features, etc...).
 
 ## Update uPortal-start
 
@@ -133,9 +133,9 @@ $ ./gradlew tomcatStop
 
 Publish a new apereo/uPortal-demo Docker image and update the `:latest` tag.
 Prerequisites:
-  - Docker Cloud account (<https://cloud.docker.com>)
-  - Access to post to the apereo Docker group
-  - The uPortal version has been added to `uPortal-start`
+-   Docker Cloud account (<https://cloud.docker.com>)
+-   Access to post to the apereo Docker group
+-   The uPortal version has been added to `uPortal-start`
 
 ```sh
 $ cd {uPortal-start repo}
@@ -147,8 +147,9 @@ $ docker push apereo/uportal-demo:latest
 
 ## Update Community
 For any non-snapshot release, email an announcement to [`uportal-dev`](https://groups.google.com/a/apereo.org/forum/#!forum/uportal-dev) and [`uportal-user`](https://groups.google.com/a/apereo.org/forum/#!forum/uportal-user).
-  - Be sure to acknowledge those who contributed to the release.
-  - Be sure to put the release into context for existing deployers to understand.
+
+-   Be sure to acknowledge those who contributed to the release.
+-   Be sure to put the release into context for existing deployers to understand.
 
 Have someone with access to the [uPortal Twitter account](https://twitter.com/uportal) announce the release.
 
@@ -157,4 +158,3 @@ Have someone with access to the [uPortal Twitter account](https://twitter.com/up
 (<https://apereo.atlassian.net/wiki/spaces/UPC/pages/102336655/Cutting+a+uPortal+Release>)
 (<https://central.sonatype.org/pages/ossrh-guide.html>)
 (<https://docs.gradle.org/current/userguide/signing_plugin.html#sec:signatory_credentials>)
-

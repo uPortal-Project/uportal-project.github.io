@@ -8,6 +8,6 @@ Jim Helwig, Benito Gonzalez, Jonathan Tran, Chris Beach
 
 ### Task board updates
 
-* The [roadmap](../../roadmap.md) has been updated
-* The [documentation strategy](../../doc-strategy.md) has been documented and published. Feedback on this would be welcomed.
-* The steering committee discussed a release/version philosophy for documentation
+*   The [roadmap](../../roadmap.md) has been updated
+*   The [documentation strategy](../../doc-strategy.md) has been documented and published. Feedback on this would be welcomed.
+*   The steering committee discussed a release/version philosophy for documentation

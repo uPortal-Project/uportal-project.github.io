@@ -4,8 +4,8 @@ The following document assumes that your Java Virtual Machine has already been s
 
 The commands regarding creating the certificate keystore reference the `keytool` utility bundled with the Oracle JDK.
 
-+ [Keytool documentation for Windows](http://download.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html)
-+ [Keytool documentation for Solaris/Linux](http://download.oracle.com/javase/6/docs/technotes/tools/solaris/keytool.html)
++   [Keytool documentation for Windows](http://download.oracle.com/javase/6/docs/technotes/tools/windows/keytool.html)
++   [Keytool documentation for Solaris/Linux](http://download.oracle.com/javase/6/docs/technotes/tools/solaris/keytool.html)
 
 ## Step 1: Create a certificate keystore
 
@@ -15,16 +15,16 @@ A certificate keystore is a single file that contains SSL private keys and certi
 $JAVA_HOME/bin/keytool -genkey -alias tomcat -keyalg RSA
 ```
 
-+ You will be prompted for the "keystore password" which has a default value of `changeit`.
-+ The next several prompts will be used to generate a self signed certificate for you brand new private key. If you are familiar with openssl, the fields are presented to you in reverse order:
-+ What is your first and last name? (This corresponds to CN and should match the domain name your customers will use to access your uPortal instance, Example: <strong>your-host.university.edu</strong>)
-+ What is the name of your organizational unit? (OU, Example: <strong>Division of Information Technology</strong>)
-+ What is the name of your organization? (O, Example: <strong>University of Somewhere</strong>)
-+ What is the name of your City or Locality? (L, Example: <strong>Somewhere</strong>)
-+ What is the name of your State or Province? (ST, Example: <strong>Wisconsin</strong>)
-+ What is the two-letter country code for this unit? (C, Example: <strong>US</strong>)
-+ You will be asked to confirm your choices, type `yes` and hit enter to accept.
-+ `Enter key password for &lt;tomcat&gt;` is the next question, DO NOT type a password different than your keystore password. Tomcat has no support for keys within keystores that have different password values than the keystore itself. Simply hit enter to proceed.
++   You will be prompted for the "keystore password" which has a default value of `changeit`.
++   The next several prompts will be used to generate a self signed certificate for you brand new private key. If you are familiar with openssl, the fields are presented to you in reverse order:
++   What is your first and last name? (This corresponds to CN and should match the domain name your customers will use to access your uPortal instance, Example: <strong>your-host.university.edu</strong>)
++   What is the name of your organizational unit? (OU, Example: <strong>Division of Information Technology</strong>)
++   What is the name of your organization? (O, Example: <strong>University of Somewhere</strong>)
++   What is the name of your City or Locality? (L, Example: <strong>Somewhere</strong>)
++   What is the name of your State or Province? (ST, Example: <strong>Wisconsin</strong>)
++   What is the two-letter country code for this unit? (C, Example: <strong>US</strong>)
++   You will be asked to confirm your choices, type `yes` and hit enter to accept.
++   `Enter key password for &lt;tomcat&gt;` is the next question, DO NOT type a password different than your keystore password. Tomcat has no support for keys within keystores that have different password values than the keystore itself. Simply hit enter to proceed.
 
 Your `cacerts` keystore now contains a private key and a self signed certificate. The `cacerts` files can be found inside your JVM install at the path:
 
@@ -113,6 +113,6 @@ You should see the CA in the certificate chain.
 
 ## Additional references
 
-+ [Tomcat SSL How-To](http://tomcat.apache.org/tomcat-7.0-doc/ssl-howto.html)
-+ [Apache httpd SSL documentation](http://httpd.apache.org/docs/2.2/ssl/)
-+ [Apache httpd SSL FAQ](http://httpd.apache.org/docs/2.2/ssl/ssl_faq.html)
++   [Tomcat SSL How-To](http://tomcat.apache.org/tomcat-7.0-doc/ssl-howto.html)
++   [Apache httpd SSL documentation](http://httpd.apache.org/docs/2.2/ssl/)
++   [Apache httpd SSL FAQ](http://httpd.apache.org/docs/2.2/ssl/ssl_faq.html)

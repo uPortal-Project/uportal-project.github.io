@@ -1,4 +1,4 @@
-![uPortal logo](../en/images/uPortal-logo.jpg)
+![uPortal logo](../../../assets/images/uPortal-logo.jpg)
 
 [![build status](https://github.com/uPortal-Project/uPortal-start/workflows/CI/badge.svg?branch=master)](https://github.com/uPortal-Project/uPortal-start/actions)
 
@@ -10,29 +10,29 @@ les lycées et collèges et les communautés de Recherche. **uPortal-start est u
 
 uPortal-start va vous aider à gérer:
 
-  - votre configuration d'uPortal
-  - votre Skin uPortal
-  - vos données dans uPortal
-  - et vos déploiements d'uPortal au travers d'outils en interface en ligne de commande (CLI)
+-   votre configuration d'uPortal
+-   votre Skin uPortal
+-   vos données dans uPortal
+-   et vos déploiements d'uPortal au travers d'outils en interface en ligne de commande (CLI)
 
 :warning: Attention uPortal-start fourni des données dans `data/quickstart` ainsi qu'une configuration
 dans `etc/portal/` valable que pour un usage de démonstration, cette configuration n'est pas à utiliser
-en production sans vérification préalable (se référer aux [Fichiers de données (en)](../en/data/README.md)) .
+en production sans vérification préalable (se référer aux [Fichiers de données (en)](../../en/uportal5-manual/data/README.md)) .
 
 ## Sujets supplémentaires
 
-* [Configuration de Base de Données](database/README.md)
-* [Configuration de Tomcat](tomcat/README.md)
-* [Intégrations](integrations/README.md)
-* [Fichiers de données (en)](../en/data/README.md)
-* [Ajouter un contenu dans uPortal-start (en)](../en/content/README.md)
+*   [Configuration de Base de Données](database/README.md)
+*   [Configuration de Tomcat](tomcat/README.md)
+*   [Intégrations](integrations/README.md)
+*   [Fichiers de données (en)](../../en/uportal5-manual/data/README.md)
+*   [Ajouter un contenu dans uPortal-start (en)](../../en/uportal5-manual/content/README.md)
 
 ### Prérequis
 
 Les logiciels suivants sont requis pour travailler avec uPortal-start :
 
-  - un [Java Development Kit][] (JDK)
-  - un [Client Git][] approprié à votre OS
+-   un [Java Development Kit][] (JDK)
+-   un [Client Git][] approprié à votre OS
 
 Télécharger et installer la **dernière release JDK 8**.  Assurez-vous que ce soit le JDK ; _un JRE n'est pas suffisant !_
 
@@ -47,8 +47,8 @@ de bénéficier de ces contributions.
 Ce `README` fournit des informations de haut niveau sur le composant uPortal-start, ainsi que des exemples 
 d'exécution de nombreuses tâches courantes. Le manuel complet d'uPortal 5.x est hébergé dans les pages GitHUb.
 
-  - [uPortal 5.x Manual (en)][]
-  - [Manuel uPortal 5.x (fr)][]
+-   [uPortal 5.x Manual (en)][]
+-   [Manuel uPortal 5.x (fr)][]
 
 autant que possible, **les exemples de ce `LISEZMOI` sont présentés dans l'ordre dans lequel vous allez
 les exécuter** pour configurer un environnement de développement uPortal en local.
@@ -81,14 +81,14 @@ en exécutant la commande suivante :
 
 ### Liste des Exemples :
 
-  - [Comment tout configurer pour la première fois](#comment-tout-configurer-pour-la-première-fois)
-  - [Comment installer Tomcat](#comment-installer-tomcat)
-  - [Comment démarrer la base de données intégrée](#comment-démarrer-la-base-de-données-intégrée)
-  - [Comment déployer la technologie uPortal sur Tomcat](#comment-déployer-la-technologie-uportal-sur-tomcat)
-  - [Comment créer et initialiser le schéma de base de données](#comment-créer-et-initialiser-le-schéma-de-base-de-données)
-  - [Comment démarrer Tomcat](#comment-démarrer-tomcat)
-  - [Comment créer une Skin personnalisée](#comment-créer-une-skin-personnalisée)
-  - [Comment configurer votre déploiement](#comment-configurer-votre-déploiement)
+-   [Comment tout configurer pour la première fois](#comment-tout-configurer-pour-la-première-fois)
+-   [Comment installer Tomcat](#comment-installer-tomcat)
+-   [Comment démarrer la base de données intégrée](#comment-démarrer-la-base-de-données-intégrée)
+-   [Comment déployer la technologie uPortal sur Tomcat](#comment-déployer-la-technologie-uportal-sur-tomcat)
+-   [Comment créer et initialiser le schéma de base de données](#comment-créer-et-initialiser-le-schéma-de-base-de-données)
+-   [Comment démarrer Tomcat](#comment-démarrer-tomcat)
+-   [Comment créer une Skin personnalisée](#comment-créer-une-skin-personnalisée)
+-   [Comment configurer votre déploiement](#comment-configurer-votre-déploiement)
 
 ### Comment tout configurer pour la première fois
 
@@ -103,10 +103,10 @@ Utilisez la commande suivante pour configurer votre portail la première fois :
 
 Cette commande effectue les étapes suivantes :
 
-  - Démarre l'instance HSQLDB intégrée (`hsqlStart`)
-  - Télécharge, installe et configure le conteneur de servlet Tomcat intégré (`tomcatInstall`)
-  - Déploie toutes les applications Web d'uPortal sur Tomcat (`tomcatDeploy`)
-  - Créé le schéma de base de données et importe à la fois les données basiques et personnalisées par implémentation (`dataInit`)
+-   Démarre l'instance HSQLDB intégrée (`hsqlStart`)
+-   Télécharge, installe et configure le conteneur de servlet Tomcat intégré (`tomcatInstall`)
+-   Déploie toutes les applications Web d'uPortal sur Tomcat (`tomcatDeploy`)
+-   Créé le schéma de base de données et importe à la fois les données basiques et personnalisées par implémentation (`dataInit`)
 
 :warning:  Après cette commande, votre instance HSQLDB sera en cours d'exécution. C'est normalement une bonne chose,
 mais n'oubliez pas de l'arrêter si vous en avez besoin.
@@ -225,15 +225,15 @@ Vous pouvez arrêter le serveur Tomcat en utilisant cette commande :
 ### Premier lancement d'uPortal via uPortal-start
 
 En assumant que tous les paramètres par défaut sont conservés :
-* L'URL d'accès à uPortal est :  <http://localhost:8080/uPortal/>
-* En utilisant les informations d'identification en exemple, vous pouvez contourner CAS en test local. les logins / URL sont :
-  * admin: <http://localhost:8080/uPortal/Login?userName=admin&password=admin>
-  * faculty: <http://localhost:8080/uPortal/Login?userName=faculty&password=faculty>
-  * staff <http://localhost:8080/uPortal/Login?userName=staff&password=staff>
-  * student <http://localhost:8080/uPortal/Login?userName=student&password=student>
-  * guest <http://localhost:8080/uPortal/render.userLayoutRootNode.uP>
-* L'installation par défaut de tomcat est :  _uPortal-start/.gradle/tomcat_
-* Les logs pour debugger sont localisés dans :  _uPortal-start/.gradle/tomcat/logs_
+*   L'URL d'accès à uPortal est :  <http://localhost:8080/uPortal/>
+*   En utilisant les informations d'identification en exemple, vous pouvez contourner CAS en test local. les logins / URL sont :
+    *   admin: <http://localhost:8080/uPortal/Login?userName=admin&password=admin>
+    *   faculty: <http://localhost:8080/uPortal/Login?userName=faculty&password=faculty>
+    *   staff <http://localhost:8080/uPortal/Login?userName=staff&password=staff>
+    *   student <http://localhost:8080/uPortal/Login?userName=student&password=student>
+    *   guest <http://localhost:8080/uPortal/render.userLayoutRootNode.uP>
+*   L'installation par défaut de tomcat est :  _uPortal-start/.gradle/tomcat_
+*   Les logs pour debugger sont localisés dans :  _uPortal-start/.gradle/tomcat/logs_
 
 ### Comment créer une Skin personnalisée
 
@@ -259,8 +259,8 @@ de ce `LISEZMOI` vous guide dans cette création).
 Vous pouvez _surcharger_ la valeur de la plupart des paramètres de configuration en utilisant un ou les deux fichiers de 
 configuration locaux suivants:
 
-  - `uPortal.properties`
-  - `global.properties`
+-   `uPortal.properties`
+-   `global.properties`
 
 Les deux fichiers sont facultatifs. `uPortal.properties` est pour les paramètres _uPortal seulement_, alors que 
 `global.properties` est pour les paramètres qui peuvent aussi être lus et utilisés par les _Modules d'uPortal_ (comme 
@@ -282,9 +282,9 @@ cet exemple avec des valeurs spécifiques à votre institution dans votre fork d
 uPortal-start fournit une prise en charge intégrée pour la création d'images Docker via son interface de ligne de commande (CLI). 
 Il sait comment créer trois images différentes (à trois fins différentes) :
 
-  - `apereo/uportal` est la base, une image du serveur web seulement
-  - `apereo/uportal-cli` est l'image pour exécuter des commandes CLI à partir d'un conteneur (ex. : Import/Export)
-  - `apereo/uportal-demo` est une image qui inclut la base de données HSQL intégrée et convient pour évaluer uPortal
+-   `apereo/uportal` est la base, une image du serveur web seulement
+-   `apereo/uportal-cli` est l'image pour exécuter des commandes CLI à partir d'un conteneur (ex. : Import/Export)
+-   `apereo/uportal-demo` est une image qui inclut la base de données HSQL intégrée et convient pour évaluer uPortal
 
 Utiliser l'une des tâches Gradle suivantes pour créer l'image dont vous avez besoin :
 

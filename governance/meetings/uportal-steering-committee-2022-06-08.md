@@ -18,8 +18,8 @@ The [Apereo Stack-Hack](https://eventyay.com/e/99f4099e/session/7752) will be on
 
 uPortal Steering Committee Elections will be taking place soon. The steering committee has the following vacancies:
 
-* Two 2-year developer representatives
-* Two 2-year community representatives
-* One 1-year community representative
+*   Two 2-year developer representatives
+*   Two 2-year community representatives
+*   One 1-year community representative
 
 See the [uportal-user](https://groups.google.com/a/apereo.org/g/uportal-user)/[uportal-dev](https://groups.google.com/a/apereo.org/g/uportal-dev) mailing list thread for more information: [https://groups.google.com/a/apereo.org/g/uportal-user/c/KPu6oBNJ1wk](https://groups.google.com/a/apereo.org/g/uportal-user/c/KPu6oBNJ1wk)

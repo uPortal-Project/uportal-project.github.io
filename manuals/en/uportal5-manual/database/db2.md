@@ -115,6 +115,6 @@ ant clean initportal
 
  
 
-##  Issues and Known Bugs
+## Issues and Known Bugs
 
 Some people have encountered problems with database drivers with certain web application environments if the classes zip file is used as-is with the `.zip` file extension. Simply renaming the file to a `.jar` file seems to fix the problem. Alternatively, unzipping the classes file into a directory structure, then using the jar command to repackage the classes into a jar file works as well.

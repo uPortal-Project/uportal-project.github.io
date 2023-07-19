@@ -10,8 +10,8 @@ We will look at ways to facilitate collaboration and discussion around the uPort
 
 ## uPortal Steering Committee priorities for 2019
 The uPSC facilitates work beyond the uPortal codebase itself. This year the committee intends to focus on improving communication. Specific areas include:
-* Improving the web presence on the [uPortal website](https://www.apereo.org/projects/uportal)
-* Creating high level materials that will help decision makers understand the value of both adopting uPortal and participating in the community
-* Moving remaining valuable content from the uPortal wiki to GitHub pages and archive the rest
+*   Improving the web presence on the [uPortal website](https://www.apereo.org/projects/uportal)
+*   Creating high level materials that will help decision makers understand the value of both adopting uPortal and participating in the community
+*   Moving remaining valuable content from the uPortal wiki to GitHub pages and archive the rest
 
 We will also work to build the [uPortal Supporting Subscription program](https://www.apereo.org/projects/uportal/uportal-supporting-subscription-model) and identify the best use for its funds.

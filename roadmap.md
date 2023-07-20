@@ -40,11 +40,11 @@ A dropped feature / change may have merit, but the community may not want to pla
 
 ## uPortal 2023/2024 Roadmap
 
-Category        | 2023 Q3                            | 2023 Q4                            | 2024 Q1                      | 2024 Q2          | 2024 Q3           | 2024 Q4
---------------- |------------------------------------|------------------------------------|------------------------------| -----------------|-------------------|----------------
-Differentiating | Convert Portlets to Web Components | Modernize QuickStart               | Migrate WCs to Lit           |                  |                   | Refactor Core Portlets
-Integration     | Clean up APIs                      |                                    |                              |                  | Remove JAXB       |
-Parity          | Portlets upgraded to Spring 5      | uPortal upgraded to Spring 5       | Java 17                      | Update Gradle    |                   |
+Category        | 2023 Q3                            | 2023 Q4                       | 2024 Q1                      | 2024 Q2                | 2024 Q3           | 2024 Q4
+--------------- |------------------------------------|-------------------------------|------------------------------| -----------------------|-------------------|---------------------
+Differentiating |                                    | Modernize QuickStart          | Migrate WCs to Lit           |Convert Portlets to WCs |                   | Refactor Admin Pages
+Integration     | Clean up APIs                      |                               |                              |                        | Remove JAXB       |
+Parity          | Portlets upgraded to Spring 5      | uPortal upgraded to Spring 5  | Java 17                      | Update Gradle          |                   |
 
 ## uPortal 5 Year Roadmap
 
@@ -57,7 +57,3 @@ Parity          | Drop Portlet Support               | Adopt Latest Java LTS    
 ## Ongoing Tasks
 -   Security Patches
 -   Migrate / Maintain Docs
-
-## Future Tasks
--   Update Gradle to latest version
--   Remove JAXB

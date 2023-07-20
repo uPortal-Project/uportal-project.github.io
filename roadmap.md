@@ -38,13 +38,21 @@ This is the third category that captures changes that capture work that simply k
 Some suggestions may not align with our current strategy or may not be included for other reasons.
 A dropped feature / change may have merit, but the community may not want to plan to work on it in the next year.
 
-## uPortal 2022 Roadmap
+## uPortal 2023/2024 Roadmap
 
-Category        | 2023 Q1                            | 2023 Q2                            | 2023 Q3                      | 2023 Q4
+Category        | 2023 Q3                            | 2023 Q4                            | 2024 Q1                      | 2024 Q2          | 2024 Q3           | 2024 Q4
+--------------- |------------------------------------|------------------------------------|------------------------------| -----------------|-------------------|----------------
+Differentiating | Convert Portlets to Web Components | Modernize QuickStart               | Migrate WCs to Lit           |                  |                   | Refactor Core Portlets
+Integration     | Clean up APIs                      |                                    |                              |                  | Remove JAXB       |
+Parity          | Portlets upgraded to Spring 5      | uPortal upgraded to Spring 5       | Java 17                      | Update Gradle    |                   |
+
+## uPortal 5 Year Roadmap
+
+Category        | 2025                               | 2026                               | 2027                         | 2028
 --------------- |------------------------------------|------------------------------------|------------------------------| -------
-Differentiating | Convert Portlets to Web Components | Modernize QuickStart               | Migrate WCs to Lit           |
-Integration     | Clean up APIs                      |                                    |                              |
-Parity          | Java 11 - DONE                     | Portlets upgraded to Spring 5      | uPortal upgraded to Spring 5 | Java 17
+Differentiating | Revamp Rendering Pipeline          | Modernize Rendered Pages           |                              |
+Integration     | Clean up APIs                      |                                    | Modularize Core              |
+Parity          | Drop Portlet Support               | Adopt Latest Java LTS              |                              | Replace Gradle
 
 ## Ongoing Tasks
 -   Security Patches
@@ -53,6 +61,3 @@ Parity          | Java 11 - DONE                     | Portlets upgraded to Spri
 ## Future Tasks
 -   Update Gradle to latest version
 -   Remove JAXB
--   Add more APIs
--   Revamp marketing site
--   Standardize JS Libraries

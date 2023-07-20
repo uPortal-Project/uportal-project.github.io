@@ -15,19 +15,19 @@ needed files in your environment, if you are not able to upgrade.
 Google Analytics 4, like Google Universal Analytics, is implemented in two files within the
 uPortal Google Analytics Portlet.
 
-- init.jsp
-- up-ga.js
+-   init.jsp
+-   up-ga.js
 
 Within the community version of uPortal, these files are located within the uPortal-webapp project
 
-- src/main/webapp/WEB-INF/jsp/GoogleAnalytics/init.jsp
-- src/main/webapp/media/skins/common/javascript/uportal/up-ga.js
+-   src/main/webapp/WEB-INF/jsp/GoogleAnalytics/init.jsp
+-   src/main/webapp/media/skins/common/javascript/uportal/up-ga.js
 
 To use these files without using the uPortal community version but within uportal-start, put these
 two files in the overlays folder
 
-- overlays/uPortal/src/main/webapp/WEB-INF/jsp/GoogleAnalytics/init.jsp
-- overlays/uPortal/src/main/webapp/media/skins/common/javascript/uportal/up-ga.js
+-   overlays/uPortal/src/main/webapp/WEB-INF/jsp/GoogleAnalytics/init.jsp
+-   overlays/uPortal/src/main/webapp/media/skins/common/javascript/uportal/up-ga.js
 
 ### init.jsp
 
@@ -62,13 +62,13 @@ the event to be immutable.
 
 The overall structure of the updated up-ga.js script is similar to the original script with several exceptions:
 
-- Several functions return values that will be included in the up.gtag("event") body, rather than put directly
+-   Several functions return values that will be included in the up.gtag("event") body, rather than put directly
 into the configuration of the ga("event")
-- Due to dependencies, some functions have been reordered.
-- The up.gtag javascript object contains the needed code for executing the needed events, whereas the original script
+-   Due to dependencies, some functions have been reordered.
+-   The up.gtag javascript object contains the needed code for executing the needed events, whereas the original script
 did not need to be added to the up structure.  At the time, this was required to have visibility into the Google
 Analytics 4 functions.  This could be revisited if the current implementation has issues.
-- Google Universal Analytics sends individual events.  GA4 collects events and sends them in batch, approximately event
+-   Google Universal Analytics sends individual events.  GA4 collects events and sends them in batch, approximately event
 10 seconds.
 
 ## Configuration Changes
@@ -77,6 +77,6 @@ The biggest change is the need to create and use the Google Analytics 4 tag.  Go
 a "UA-" prefix.  GA4 tags begin with a "G-" prefix.  You create the new GA4 tag from within the Google Analytics website within the Admin
 function.  Once you have created this new tag, you will need to deploy it to the portlet via a dataImport.
 
-1. Modify the file portlet-definition/google-analytics-config/portlet-definition.xml where you store your portlet definitions.
-2. Within that file, replace the UA- value of the "propertyId" field with the new G- prefixed value and save.
-3. Perform a dataImport to load the new portlet definition.
+1.  Modify the file portlet-definition/google-analytics-config/portlet-definition.xml where you store your portlet definitions.
+2.  Within that file, replace the UA- value of the "propertyId" field with the new G- prefixed value and save.
+3.  Perform a dataImport to load the new portlet definition.

@@ -20,7 +20,7 @@ In the "FOSS For Education" community track there will be some uPortal presentat
 There are few 30-minute calls in the works focused on developers, contributors, and the user community.
 Topics include:
 
-* Roadmap technicalities
-* Website plans
+*   Roadmap technicalities
+*   Website plans
 
 Watch the mailing lists and this space for the call info.

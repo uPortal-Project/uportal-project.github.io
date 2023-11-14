@@ -12,6 +12,7 @@ ___We welcome any assistance in migrating documentation from legacy/other source
 
 *   [API Documentation](developer/api/README.md)
 *   [Maven Release Process](developer/maven-release-process.md)
+*   [Web Component Development](developer/web-component-development.md)
 
 ## Systems Administration
 

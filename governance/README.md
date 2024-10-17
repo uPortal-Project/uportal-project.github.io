@@ -6,7 +6,7 @@ The uPortal Steering Committee (uPSC) serves as the governing body responsible f
 The uPortal Steering Committee serves to foster growth, collaboration, and communication within the uPortal project. The uPSC coordinates communication related to community calls, online hangouts, and conference meetings. The committee has oversight responsibility for project documentation and provides leadership in the development of uPortal marketing materials. The committee coordinates uPortal security related issues and facilitates resolution. The uPSC assists with the identification and development of resources (people or funding). Committee members liaison with the uPortal developers, the uPortal community of deployers and potential deployers, and the Apereo board.
 
 ## Composition
-uPSC members serve two year terms and can be re-elected/re-appointed. Effort will be made to stagger terms. Developers, deployers, deployers, functional users, supporters are encouraged to consider playing a role. 
+uPSC members serve two year terms and can be re-elected/re-appointed. Effort will be made to stagger terms. Developers, deployers, functional users, supporters are encouraged to consider playing a role. 
 
 * Developer representatives (2-4) - Nominated by and elected by active committers
 * Community representatives (2-4) - Nominated by anyone in the community; elected by the uPSC; 

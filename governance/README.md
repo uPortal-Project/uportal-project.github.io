@@ -17,14 +17,14 @@ uPSC members serve two year terms and can be re-elected/re-appointed. Effort wil
 
 Developer representatives
 
-* Jonathan Tran, CalPoly Pomona, elected 2022
+* Jonathan Tran, elected 2022
 * Benito Gonzalez, Unicon, elected 2023 (for remainder of open term)
 * Chris Beach, Unicon, elected 2023
 * Julien Gribonvald, GIP RECIA - K12 schools of Center-Loire Valley Region, elected 2023
 
 Community representatives 
 
-* Laura McCord, Unicon, elected 2022
+* Laura McCord, elected 2022
 * Marc Huffstickler, Texas A&M University, elected 2023
 
 Supporting Subscriber representative

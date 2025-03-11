@@ -8,32 +8,31 @@ The uPortal Steering Committee serves to foster growth, collaboration, and commu
 ## Composition
 uPSC members serve two year terms and can be re-elected/re-appointed. Effort will be made to stagger terms. Developers, deployers, functional users, supporters are encouraged to consider playing a role. 
 
-* Developer representatives (2-4) - Nominated by and elected by active committers
-* Community representatives (2-4) - Nominated by anyone in the community; elected by the uPSC; 
-* Supporting subscriber representative (1) - Nominated by and elected by Apereo members that are also uPortal sustaining organizations in good standing
-* Apereo board liaison (1) - Non-voting, appointed by the Apereo Board
+  * Developer representatives (2-4) - Nominated by and elected by active committers
+  * Community representatives (2-4) - Nominated by anyone in the community; elected by the uPSC; 
+  * Supporting subscriber representative (1) - Nominated by and elected by Apereo members that are also uPortal sustaining organizations in good standing
+  * Apereo board liaison (1) - Non-voting, appointed by the Apereo Board
 
 ## Current Steering Committee Members
 
 Developer representatives
 
-* Jonathan Tran, elected 2022
-* Benito Gonzalez, Unicon, elected 2023 (for remainder of open term)
-* Chris Beach, Unicon, elected 2023
-* Julien Gribonvald, GIP RECIA - K12 schools of Center-Loire Valley Region, elected 2023
+  * Benito Gonzalez, Unicon, elected 2024
+  * Chris Beach, Unicon, elected 2023
+  * Julien Gribonvald, GIP RECIA - K12 schools of Center-Loire Valley Region, elected 2023
 
 Community representatives 
 
-* Laura McCord, elected 2022
-* Marc Huffstickler, Texas A&M University, elected 2023
+  * Mary Elder, University of Edinburgh, elected 2024
+  * Marc Huffstickler, Texas A&M University, elected 2023
 
 Supporting Subscriber representative
 
-* Mary Elder, University of Edinburgh, elected 2022
+  * vacant
 
 Apereo board liaison
 
-* Jim Helwig, University of Wisconsin-Madison, appointed
+  * Jim Helwig, University of Wisconsin-Madison, appointed
 
 ## Meetings
 Synopses of the monthly meetings are linked at the [meetings page](./meetings).

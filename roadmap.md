@@ -38,21 +38,14 @@ This is the third category that captures changes that capture work that simply k
 Some suggestions may not align with our current strategy or may not be included for other reasons.
 A dropped feature / change may have merit, but the community may not want to plan to work on it in the next year.
 
-## uPortal 2023/2024 Roadmap
+## uPortal Roadmap
 
-Category        | 2023 Q3                            | 2023 Q4                       | 2024 Q1                      | 2024 Q2                | 2024 Q3           | 2024 Q4
---------------- |------------------------------------|-------------------------------|------------------------------| -----------------------|-------------------|---------------------
-Differentiating |                                    | Modernize QuickStart          | Migrate WCs to Lit           |Convert Portlets to WCs |                   | Refactor Admin Pages
-Integration     | Clean up APIs                      |                               |                              |                        | Remove JAXB       |
-Parity          | Portlets upgraded to Spring 5      | uPortal upgraded to Spring 5  | Java 17                      | Update Gradle          |                   |
-
-## uPortal 5 Year Roadmap
-
-Category        | 2025                               | 2026                               | 2027                         | 2028
---------------- |------------------------------------|------------------------------------|------------------------------| -------
-Differentiating | Revamp Rendering Pipeline          | Modernize Rendered Pages           |                              |
-Integration     | Clean up APIs                      |                                    | Modularize Core              |
-Parity          | Drop Portlet Support               | Adopt Latest Java LTS              |                              | Replace Gradle
+Category        | 2025 (uPv6)                    | 2026 (uPv7)                   | 2027 (uPv8)                 | 2028 (uPv9)
+--------------- |--------------------------------|-------------------------------|-----------------------------| -----------------------
+Differentiating | Modernize Rendered Pages<br>Convert External Portlets to WCs | Revamp Rendering Pipeline<br>Convert Internal Portlets to WCs |
+Integration | Add CI Tools (i.e. Accessibility testing)<br>Clean up APIs (low priority) |  | Modularize Core
+Parity |Java 21/Maven/Tomcat Upgrade |  | Adopt Latest Java LTS | Replace Gradle
+Dropped | | Drop Portlet Support | |
 
 ## Ongoing Tasks
 -   Security Patches

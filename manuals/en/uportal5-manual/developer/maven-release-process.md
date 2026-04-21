@@ -7,7 +7,7 @@ There are 3 prerequisites to cutting maven releases:
 1.  [Sonatype Account at Central Publisher Portal](https://central.sonatype.com/)
     -   NOTE!! Do not link a social account — create a local account.
     -   See the first part of [Register to Publish Via the Central Portal](https://central.sonatype.org/register/central-portal/).
-    -   **Note:** The legacy OSSRH service (`oss.sonatype.org`) and the Sonatype JIRA signup were sunset in June 2025. All publishing — and all namespace-permissions requests — now go through the Central Publisher Portal.
+    -   **Note:** The legacy OSSRH service (`oss.sonatype.org`) and the Sonatype JIRA account-creation flow were sunset in June 2025. All publishing — and all namespace-permissions requests — now go through the Central Publisher Portal.
 2.  Permissions at Sonatype to release projects
     -   Namespace permissions are managed via the [Central Publisher Portal](https://central.sonatype.com/).
     -   If you need access to the `org.jasig.portlet` (or another uPortal ecosystem) namespace, contact a uPortal committer.
@@ -166,7 +166,7 @@ $ curl -X GET \
 
 ### A note on POM packaging
 
-Central Portal validation rejects deployments where the advertised `<packaging>` does not match the uploaded artifact's file extension. This bit uPortal during the 2026 release: a Gradle `uploadArchives` block hardcoded `packaging 'jar'` for all subprojects, which broke the WAR module. In Maven, `<packaging>` is authoritative per-module, so the bug does not occur the same way — but confirm each module declares the right packaging:
+Central Portal validation rejects deployments where the advertised `<packaging>` does not match the uploaded artifact's file extension. This bit uPortal during the 2026 release: a Gradle `uploadArchives` block hardcoded `packaging 'jar'` for every submodule, which broke the WAR module. In Maven, `<packaging>` is authoritative per-module, so the bug does not occur the same way — but confirm each module declares the right packaging:
 
 ```sh
 $ grep -l '<packaging>war</packaging>' $(find . -name pom.xml -not -path '*/target/*')

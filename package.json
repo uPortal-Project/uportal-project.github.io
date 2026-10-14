@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "@cspell/dict-fr-fr": "~2.3.0",
-    "cspell": "~10.0.0",
+    "cspell": "~10.4.0",
     "remark-cli": "^12.0.0",
     "remark-preset-lint-consistent": "^6.0.0",
     "remark-preset-lint-recommended": "^7.0.0",

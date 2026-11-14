@@ -194,17 +194,59 @@ If you need to fall back to the interactive flow (mainly for debugging an unusua
 
 Because Maven's `deploy` phase uses the legacy Nexus 2-flavored upload path, the OSSRH Staging API does **not** automatically close the staging repository after `release:perform` uploads the artifacts. You must manually trigger the upload into the Central Portal and then publish from the portal UI.
 
+### Confirm `release:perform` actually deployed
+
+`release:perform` can report success — tagging, committing the next snapshot, building and GPG-signing the artifacts — without its `deploy` step ever reaching Sonatype. The tag and the version bump are then on `master` while nothing is staged, which looks identical to a successful release until you go to publish.
+
+Before promoting, confirm something is actually staged:
+
+```sh
+$ curl -4 -s -X GET \
+    "https://ossrh-staging-api.central.sonatype.com/manual/search/repositories?ip=any&profile_id={groupId}" \
+    -H "Authorization: Bearer $(printf '%s:%s' '{username}' '{password}' | base64 | tr -d '\n')"
+```
+
+A repository in `"state":"open"` is what you want. An empty `{"repositories":[]}` means the deploy never landed — re-run **just the deploy** from the tagged checkout rather than re-cutting the release:
+
+```sh
+$ cd target/checkout
+$ mvn -B deploy -P<the release profiles for this component>
+```
+
+This occurred during the `uportal-portlet-parent` 52 release: `release:perform` left a correct signed `.pom` and `.asc` in `target/checkout/target/` and pushed the tag, but the Central Portal reported zero deployments and zero staging repositories. Re-running `deploy` from the checkout uploaded on the first attempt.
+
+One known contributor to a silent `release:perform`: if you keep the GPG passphrase in a `<server><id>gpg.passphrase</id></server>` entry, Maven needs `~/.m2/settings-security.xml` to decrypt it. Without that file Maven logs
+
+```
+[WARNING] Failed to decrypt passphrase for server gpg.passphrase:
+          ... /.m2/settings-security.xml (No such file or directory)
+```
+
+and falls back to `gpg-agent`, which only succeeds while the agent still has the passphrase cached. Releases then pass or fail depending on agent state rather than on anything in the build.
+
 ### Push staged artifacts to the portal
 
 Run the following from the **same machine** that ran `release:perform` — the Central Portal matches staging repositories by source IP:
 
 ```sh
-$ curl -X POST \
+$ curl -4 -X POST \
     "https://ossrh-staging-api.central.sonatype.com/manual/upload/defaultRepository/{groupId}" \
-    -H "Authorization: Bearer $(echo -n '{username}:{password}' | base64)"
+    -H "Authorization: Bearer $(printf '%s:%s' '{username}' '{password}' | base64 | tr -d '\n')"
 ```
 
 Replace `{groupId}` with the component's root namespace (e.g. `org.jasig.portlet`, `org.jasig.resourceserver`) and `{username}`/`{password}` with your Central Portal user token credentials (the same ones in `~/.m2/settings.xml`).
+
+**Force IPv4 (`curl -4`).** "Same machine" is necessary but not sufficient. Maven's HTTP client reaches Sonatype over IPv4, so the staging repository is keyed to your IPv4 address. On a dual-stack network `curl` prefers IPv6 and the POST looks up a repository that does not exist:
+
+```
+HTTP 400
+{"error":"Failed to process request: No repository found for
+ <user>/2601:201:…/org.jasig.portlet--default-repository"}
+```
+
+while the search above shows the repository sitting `open` under the v4 address (`<user>/203.0.113.7/org.jasig.portlet--default-repository`, your own v4 address). This cost an hour during the `uportal-portlet-parent` 52 release; adding `-4` returned `HTTP 200` immediately and moved the repository to `closed` with a `portal_deployment_id`.
+
+The `| tr -d '\n'` matters for the same reason it does in the release scripts: `base64` wraps at 76 columns on some platforms, and a newline inside the `Authorization` header silently breaks authentication.
 
 If the deployment does not appear in the portal UI, search for open staging repositories:
 
